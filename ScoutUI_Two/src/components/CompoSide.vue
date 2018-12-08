@@ -2,7 +2,7 @@
   <div class="side">
     <div class="logo">
       <!--<img src="../../assets/img/LOGO-transparent.png" >-->
-      <p>Scout<b style=";">UI</b></p>
+      <p>Scout<b style="">UI</b></p>
     </div>
     <!--。。。。；移动端。。。。。。。-->
     <h4>移动端组件 </h4>
@@ -29,15 +29,15 @@
     <h4> PC 端组件 </h4>
       <span class="liTitle">导航组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <li>Menu 导航</li>
-      <li>侧边栏导航</li>
-      <li>下拉导航</li>
+      <router-link tag="li" to="/compo/menunav">Menu 导航</router-link>
+      <router-link tag="li" to="/compo/sidenav">侧边栏导航</router-link>
+      <router-link tag="li" to="/compo/slidenav">下拉导航</router-link>
     </ul>
       <span class="liTitle">列表组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <li>表格</li>
-      <li>表单</li>
-      <li>图表</li>
+      <router-link tag="li" to="/compo/form">表格</router-link>
+      <router-link tag="li" to="/compo/input">表单</router-link>
+      <router-link tag="li" to="/compo/chart">图表</router-link>
     </ul>
       <span class="liTitle">**组件<img src="../../static/img/side01.png"></span>
 

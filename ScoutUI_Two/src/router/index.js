@@ -18,6 +18,13 @@ import classifyMenu from "../components/allContents/menu/ClassifyMenu"
 import navMenu from "../components/allContents/menu/NavMenu"
 import Login from "../components/allContents/loginRegister/Login"
 import Register from "../components/allContents/loginRegister/Register"
+import menunav from "../components/allContents/pc-nav/MenuNav"
+import sidenav from "../components/allContents/pc-nav/SideNav"
+import slidenav from "../components/allContents/pc-nav/SlideNav"
+import form from "../components/allContents/pc-table/Form"
+import input from "../components/allContents/pc-table/Input"
+import chart from "../components/allContents/pc-table/Chart"
+
 import index from '@/pages/index'
 import team from '@/pages/team'
 
@@ -41,6 +48,7 @@ export default new Router({
       ]
 
     },
+    {
       path: '/compo',
       component: compo,
       children:[
@@ -63,12 +71,19 @@ export default new Router({
          */
         {path: 'Login', component: Login},
         {path: 'Register', component: Register},
+        /**
+         * pc端 导航组件
+         */
+        {path: 'menunav', component: menunav},
+        {path: 'sidenav', component: sidenav},
+        {path: 'slidenav', component: slidenav},
+        /**
+         * pc端 列表组件
+         */
+        {path: 'form', component: form},
+        {path: 'input', component: input},
+        {path: 'chart', component: chart},
       ]
-    },
-    {
-      path: '/',
-      redirect:"index",
-      component: index
     },
     {
       path: '/index',
