@@ -6,10 +6,10 @@
       <div class="banner"></div>
       <section>
         <ul class="nav">
-          <li class="am-active">
+          <li class="am-active am1">
             <router-link to="/case/caseCon1">响应式</router-link>
           </li>
-          <li class="am-active">
+          <li class="am-active am2">
             <router-link to="/case/caseCon2">移动站</router-link>
           </li>
         </ul>
@@ -59,9 +59,15 @@
     margin-right: 5%;
     text-align: center;
     color: #17b6ad;
-    background:#f2f2f2; }
-  a{text-decoration: none;
+    }
+
+  a{
+    text-decoration: none;
   display: block}
+  .link-exact-active{
+    background:#17b6ad ;
+    color: #fff;
+  }
   /*.nav li a{*/
     /*text-decoration: none;*/
     /*color: #17b6ad;*/
@@ -73,5 +79,8 @@
     padding: 0;
     list-style: none;
   }
-
+  .am1{
+    background: #17b6ad;
+    color: #fff;
+  }
 </style>

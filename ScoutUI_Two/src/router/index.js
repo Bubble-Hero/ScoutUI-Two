@@ -5,6 +5,9 @@ import Case from '@/pages/case'
 import caseCon1 from '@/components/case/caseCon1'
 import caseCon2 from '@/components/case/caseCon2'
 
+import caseDetail from '@/pages/caseDetail'
+
+
 /**
  * 组件页面路由（及其子路由）配置
  */
@@ -28,6 +31,7 @@ import chart from "../components/allContents/pc-table/Chart"
 import index from '@/pages/index'
 import team from '@/pages/team'
 
+
 Vue.use(Router)
 
 export default new Router({
@@ -49,7 +53,11 @@ export default new Router({
 
     },
     {
-      path: '/compo',
+      path: '/caseDetail',
+      name: 'caseDetail',
+      component: caseDetail,
+    },
+    {path: '/compo',
       component: compo,
       children:[
         {path: '', redirect: 'header'},
