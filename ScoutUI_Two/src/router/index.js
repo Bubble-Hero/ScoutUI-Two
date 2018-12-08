@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import HelloWorld from '@/components/HelloWorld'
+import Case from '@/pages/case'
+import caseCon1 from '@/components/case/caseCon1'
+import caseCon2 from '@/components/case/caseCon2'
 
 /**
  * 组件页面路由（及其子路由）配置
@@ -22,13 +26,28 @@ import input from "../components/allContents/pc-table/Input"
 import chart from "../components/allContents/pc-table/Chart"
 
 import index from '@/pages/index'
-
+import team from '@/pages/team'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },
+    {
+      path: '/case',
+      name: 'case',
+      component: Case,
+      children:[
+        {path: '', redirect: 'caseCon1'},
+        {path: 'caseCon1', name: 'caseCon1', component: caseCon1},
+        {path: 'caseCon2', name: 'caseCon2', component: caseCon2},
+      ]
+
+    },
       path: '/compo',
       component: compo,
       children:[
@@ -66,9 +85,19 @@ export default new Router({
       ]
     },
     {
+      path: '/',
+      redirect:"index",
+      component: index
+    },
+    {
       path: '/index',
       name:"index",
       component: index
+    },
+    {
+      path: '/team',
+      name:"team",
+      component: team
     }
   ]
 })

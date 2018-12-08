@@ -1,0 +1,77 @@
+<template>
+    <div class="row">
+      <!-----头部------->
+      <header></header>
+      <!------banner----->
+      <div class="banner"></div>
+      <section>
+        <ul class="nav">
+          <li class="am-active">
+            <router-link to="/case/caseCon1">响应式</router-link>
+          </li>
+          <li class="am-active">
+            <router-link to="/case/caseCon2">移动站</router-link>
+          </li>
+        </ul>
+        <div class="container">
+          <router-view></router-view>
+        </div>
+
+      </section>
+    </div>
+</template>
+
+<script>
+  import $ from "jquery"
+    export default {
+        name: "case",
+      mounted(){
+        $(".am-active").click(function () {
+          $(this).css({background:"#17b6ad",color:"white"})
+          $(this).siblings().css({"background":"#f2f2f2",color:"#17b6ad"})
+        });
+      }
+    }
+</script>
+
+<style scoped>
+  .row{
+    width: 100%;
+    height: 100%;
+    background:#f2f2f2;
+  }
+  .banner{width: 100%;
+  height:300px;
+  background:url("../assets/img/backimg4.jpg")}
+  section{width:90%;
+  margin: auto;
+ }
+  .nav{
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+  }
+  .nav li{
+    width:10%;
+    margin-right: 5%;
+    text-align: center;
+    color: #17b6ad;
+    background:#f2f2f2; }
+  a{text-decoration: none;
+  display: block}
+  /*.nav li a{*/
+    /*text-decoration: none;*/
+    /*color: #17b6ad;*/
+    /*display: block;*/
+    /*border: 1px solid #F2F2E7}*/
+  /*.nav li a:hover{background:#F2F2E7}*/
+  .am-nav {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+</style>
