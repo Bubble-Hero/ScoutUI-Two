@@ -12,4 +12,9 @@ export default {
 
 <style>
 
+#app {
+  width: 100%;
+  color: #2c3e50;
+  height: 100%;
+}
 </style>
