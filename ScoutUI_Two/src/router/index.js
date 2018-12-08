@@ -41,6 +41,7 @@ export default new Router({
       ]
 
     },
+    {
       path: '/compo',
       component: compo,
       children:[
