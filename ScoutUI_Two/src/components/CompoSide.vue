@@ -8,39 +8,37 @@
     <h4>移动端组件 </h4>
       <span class="liTitle">基础组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <router-link tag="li" to="/compo">顶部组件</router-link>
-      <router-link tag="li" to="/compo/footer">底部组件</router-link>
+      <router-link tag="li" to="/compo"><i class="iconfont">&#xe61e;</i>顶部组件</router-link>
+      <router-link tag="li" to="/compo/footer"><i class="iconfont">&#xe553;</i>底部组件</router-link>
     </ul>
       <span class="liTitle">菜单组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <router-link tag="li" to="/compo/goodlistmenu">商品列表菜单</router-link>
-      <router-link tag="li" to="/compo/slideupmenu">上拉菜单</router-link>
-      <router-link tag="li" to="/compo/swiperMenu">轮播菜单</router-link>
-      <router-link tag="li" to="/compo/classifyMenu">分类菜单</router-link>
-      <router-link tag="li" to="/compo/navMenu">导航菜单</router-link>
+      <router-link tag="li" to="/compo/goodlistmenu"><i class="iconfont">&#xe64c;</i>商品列表菜单</router-link>
+      <router-link tag="li" to="/compo/slideupmenu"><i class="iconfont">&#xe65d;</i>上拉菜单</router-link>
+      <router-link tag="li" to="/compo/swiperMenu"><i class="iconfont">&#xe519;</i>轮播菜单</router-link>
+      <router-link tag="li" to="/compo/classifyMenu"><i class="iconfont">&#xe642;</i>分类菜单</router-link>
+      <router-link tag="li" to="/compo/navMenu"><i class="iconfont">&#xe684;</i>导航菜单</router-link>
     </ul>
       <span class="liTitle">登录注册组件<img src="../../static/img/side01.png"></span>
 
     <ul class="slideUL">
-      <router-link tag="li" to="/compo/Login">登录组件</router-link>
-      <router-link tag="li" to="/compo/Register">注册组件</router-link>
+      <router-link tag="li" to="/compo/Login"><i class="iconfont">&#xe60f;</i>登录组件</router-link>
     </ul>
     <!--。。。。。pc端。。。。。-->
     <h4> PC 端组件 </h4>
       <span class="liTitle">导航组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <router-link tag="li" to="/compo/menunav">Menu 导航</router-link>
-      <router-link tag="li" to="/compo/sidenav">侧边栏导航</router-link>
-      <router-link tag="li" to="/compo/slidenav">下拉导航</router-link>
+      <router-link tag="li" to="/compo/menunav"><i class="iconfont">&#xe6bc;</i>Menu 导航</router-link>
+      <router-link tag="li" to="/compo/sidenav"><i class="iconfont">&#xe62d;</i>侧边栏导航</router-link>
+      <router-link tag="li" to="/compo/slidenav"><i class="iconfont">&#xe665;</i>下拉导航</router-link>
     </ul>
       <span class="liTitle">列表组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <router-link tag="li" to="/compo/form">表格</router-link>
-      <router-link tag="li" to="/compo/input">表单</router-link>
-      <router-link tag="li" to="/compo/chart">图表</router-link>
+      <router-link tag="li" to="/compo/form"><i class="iconfont">&#xe689;</i>表格</router-link>
+      <router-link tag="li" to="/compo/input"><i class="iconfont">&#xe6cf;</i>表单</router-link>
+      <router-link tag="li" to="/compo/chart"><i class="iconfont">&#xe5b9;</i>图表</router-link>
     </ul>
       <span class="liTitle">**组件<img src="../../static/img/side01.png"></span>
-
     <ul class="slideUL">
       <li>***</li>
       <li>***</li>
@@ -50,7 +48,6 @@
 
   </div>
 </template>
-
 <script>
   import $ from "jquery"
     export default {
@@ -78,7 +75,7 @@
     list-style: none;
   }
   .side span:hover{
-    color:#17b6ad;
+    color:#dab4a3;
   }
 
   .liTitle{
@@ -88,11 +85,14 @@
     margin-top: 10px;
   }
   .side li:hover{
-    background:rgba(38,83,87,.7);
-    color:#17b6ad;
+    background:rgba(0,0,0,.2);
+    color:#e2bdaf;
   }
   .slideUL{
     padding: 0;
+  }
+  .slideUL i{
+    margin-right:8px;
   }
   .s-m-b{
     margin-bottom: 30px;
@@ -116,9 +116,8 @@
 
   .logo{
     width: 228px;
-
     /*color: ;*/
-    background:rgba(0,0,0,.1) ;
+    background:#6f5b52 ;
     position: fixed;
     left: 0;
     top: 0;
