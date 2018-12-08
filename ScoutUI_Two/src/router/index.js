@@ -48,6 +48,7 @@ export default new Router({
       ]
 
     },
+    {
       path: '/compo',
       component: compo,
       children:[
@@ -83,11 +84,6 @@ export default new Router({
         {path: 'input', component: input},
         {path: 'chart', component: chart},
       ]
-    },
-    {
-      path: '/',
-      redirect:"index",
-      component: index
     },
     {
       path: '/index',
