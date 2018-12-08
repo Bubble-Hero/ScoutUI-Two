@@ -1,2 +1,0 @@
-# ScoutUI-Two
-team
