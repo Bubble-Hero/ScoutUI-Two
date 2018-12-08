@@ -19,14 +19,9 @@
         <h1>代码展示</h1>
         <div class="introBoxContent">
           <!--------------------------------下方是代码展示区-->
-          <textarea style="resize:none;" cols="30" rows="8" readonly>
-            <ul>
-              <li>关于 Scout UI</li>
-              <li>设计理念</li>
-              <li>兼容</li>
-              <li>相关链接</li>
-            </ul>
-          </textarea>
+          <script type="syntaxhighlighter" class="brush:js"><![CDATA[
+{{data1}}
+          ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
       </div>
@@ -36,7 +31,7 @@
         <!--效果展示盒子，放完效果将内联高度删除-->
         <div class="introBoxContent" style="height: 200px;">
           <!--------------------------------下方是效果组件展示区-->
-          ^(oo)^233333
+          <footer01-lc></footer01-lc>
           <!--------------------------------上方是效果组件展示区-->
         </div>
       </div>
@@ -45,23 +40,57 @@
 </template>
 
 <script>
+  import Footer01Lc from "./lc-elements/footer01-lc";
   export default {
     name: "Footer",
+    components: {Footer01Lc},
     data(){
       return{
-        // "contentData":[
-        //   {
-        //     "header2":"顶部组件",
-        //     "introContent":"用途：用于移动端顶部，具体用于概括本页面所属分类。",
-        //     "code":"<ul>\n" +
-        //       "              <li>关于 Scout UI</li>\n" +
-        //       "              <li>设计理念</li>\n" +
-        //       "              <li>兼容</li>\n" +
-        //       "              <li>相关链接</li>\n" +
-        //       "            </ul>"
-        //   },
-
-        // ]
+        data1:"<div class=\"navigation\">\n" +
+          "  <router-link class=\"nav\"><i class=\"navIcon iconfont\">&#xe604;</i>首页</router-link>\n" +
+          "  <router-link class=\"nav\"><i class=\"navIcon iconfont\">&#xe645;</i>附近</router-link>\n" +
+          "  <router-link class=\"nav\"><i class=\"navIcon iconfont\">&#xe6cd;</i>发现</router-link>\n" +
+          "  <router-link class=\"nav\"><i class=\"navIcon iconfont\">&#xe6cf;</i>订单</router-link>\n" +
+          "  <router-link class=\"nav\"><i class=\"navIcon iconfont\">&#xe8da;</i>我的</router-link>\n" +
+          "</div>\n" +
+          "\n" +
+          "<style scoped>\n" +
+          "  .navigation{\n" +
+          "    margin-top: 100px;\n" +
+          "    padding: 8px;\n" +
+          "    display:flex;/*设置五个导航条的内容由列排列变为行排列*/\n" +
+          "    height: 8vh;\n" +
+          "    font-size: 1rem;\n" +
+          "    background-color: #fff;\n" +
+          "    position: relative;\n" +
+          "    z-index: 10;\n" +
+          "    border: 1px solid #eee;\n" +
+          "  }\n" +
+          "  .nav{\n" +
+          "    display: flex;/*这个和下面的 flex-direction属性设置将图片与文字平行排布*/\n" +
+          "    flex-direction: column;\n" +
+          "    flex: 1;/*设置五个导航条的内容等分*/\n" +
+          "    line-height: 1.5rem;\n" +
+          "    text-align: center;\n" +
+          "    margin: 0 auto;\n" +
+          "    margin-top: .9em;\n" +
+          "    color:#555;\n" +
+          "  }\n" +
+          "  .navIcon{\n" +
+          "    margin:0 auto;\n" +
+          "    font-size: 2.4rem;\n" +
+          "    color:#333;\n" +
+          "  }\n" +
+          "  .router-link-active .navIcon{\n" +
+          "    font-size: 2.5rem;\n" +
+          "    color:#28c0ac;\n" +
+          "  }\n" +
+          "  .router-link-active{\n" +
+          "    margin-top: .8em;\n" +
+          "    color:#28c0ac;\n" +
+          "    font-size: 1.1rem;\n" +
+          "  }\n" +
+          "</style>"
       }
     }
   }
