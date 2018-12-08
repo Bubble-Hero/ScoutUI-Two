@@ -15,6 +15,7 @@ import navMenu from "../components/allContents/menu/NavMenu"
 import Login from "../components/allContents/loginRegister/Login"
 import Register from "../components/allContents/loginRegister/Register"
 import index from '@/pages/index'
+import team from '@/pages/team'
 
 
 Vue.use(Router)
@@ -46,6 +47,7 @@ export default new Router({
         {path: 'Register', component: Register},
       ]
     },
+    {
       path: '/',
       redirect:"index",
       component: index
@@ -54,6 +56,11 @@ export default new Router({
       path: '/index',
       name:"index",
       component: index
+    },
+    {
+      path: '/team',
+      name:"team",
+      component: team
     }
   ]
 })
