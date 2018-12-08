@@ -2,7 +2,7 @@
   <div class="side">
     <div class="logo">
       <!--<img src="../../assets/img/LOGO-transparent.png" >-->
-      <p>Scout<b style="color:#641385;">UI</b></p>
+      <p>Scout<b style=";">UI</b></p>
     </div>
     <!--。。。。；移动端。。。。。。。-->
     <h4>移动端组件 </h4>
@@ -100,16 +100,12 @@
   .side{
     width: 230px;
     height: 100%;
-    background: #1e3247;
-    padding: 0px 0 40px;
-    border: 1px solid lightgray;
+    background: rgba(0,0,0,.4);
+    padding: 66px 0 40px;
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
     overflow-y: scroll;
-    padding-top:46px;
-    position: relative;
     border:0;
   }
 
@@ -119,23 +115,21 @@
   }
 
   .logo{
-    width: 214px;
-    height: 46px;
-    line-height: 46px;
-    font-size: 20px;
-    color: #17b6ad;
-    background: #0c2a4b;
-    padding-left: 16px;
+    width: 228px;
+
+    /*color: ;*/
+    background:rgba(0,0,0,.1) ;
     position: fixed;
     left: 0;
     top: 0;
+    padding: 10px 16px ;
   }
 
   .side p{
     margin: 0;
     line-height: 46px;
-    font-size: 20px;
-    color: #17b6ad;
+    font-size: 30px;
+    color: white;
 
   }
   .side h4{
