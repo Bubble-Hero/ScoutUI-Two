@@ -5,7 +5,7 @@ import Case from '@/pages/case'
 
 import caseCon1 from '@/components/case/caseCon1'
 import caseCon2 from '@/components/case/caseCon2'
-
+import caseDetail from '@/pages/caseDetail'
 Vue.use(Router)
 
 export default new Router({
@@ -25,6 +25,11 @@ export default new Router({
         {path: 'caseCon2', name: 'caseCon2', component: caseCon2},
       ]
 
+    },
+    {
+      path: '/caseDetail',
+      name: 'caseDetail',
+      component: caseDetail,
     },
 
   ]
