@@ -39,7 +39,6 @@
       <router-link tag="li" to="/compo/chart"><i class="iconfont">&#xe5b9;</i>图表</router-link>
     </ul>
       <span class="liTitle">**组件<img src="../../static/img/side01.png"></span>
-
     <ul class="slideUL">
       <li>***</li>
       <li>***</li>
@@ -49,7 +48,6 @@
 
   </div>
 </template>
-
 <script>
   import $ from "jquery"
     export default {
