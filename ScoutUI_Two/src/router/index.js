@@ -46,10 +46,6 @@ export default new Router({
         {path: 'Register', component: Register},
       ]
     },
-      path: '/',
-      redirect:"index",
-      component: index
-    },
     {
       path: '/index',
       name:"index",
