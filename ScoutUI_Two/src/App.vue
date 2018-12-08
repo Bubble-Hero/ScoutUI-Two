@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   width: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
