@@ -3,12 +3,14 @@
     <div class="introduce">
 
       <div class="posi">
-        <div class="logo">
-          <a href="">
-            <img src="../../../static/img/LOGO-transparent.png" alt="">
-          </a>
-        </div>
-        <!--<p class="ss">ScoutUI</p>-->
+        <router-link to="/index">
+          <div class="logo">
+            <a href="">
+              <img src="../../../static/img/LOGO-transparent.png" alt="">
+            </a>
+          </div>
+        </router-link>
+        <p class="ss">S c o u t U I</p>
       </div>
 
       <p class="we">我们是一个思维活跃、讲求协同创新的技术型团队，颜值与技术支撑着一切，承担着客户公司商业与项目的核心研发任务，是项目建设的核心基础，我们的工作涉及大量的与各部门、各单位的沟通协调，所以，我们要求团队成员不仅需要过硬的专业水平，还必须爱岗敬业，严格遵循职业操守。</p>
@@ -299,18 +301,18 @@
 
 <script>
   import $ from "jquery";
-    export default {
-        name: "RightIntroduce",
-      mounted(){
-        $(function () {
-          $('.pic').hover(function () {
-            $(this).children('.shows').stop().fadeIn(200)
-          },function(){
-            $(this).children('.shows').stop().fadeOut(200)
-          })
+  export default {
+    name: "RightIntroduce",
+    mounted(){
+      $(function () {
+        $('.pic').hover(function () {
+          $(this).children('.shows').stop().fadeIn(200)
+        },function(){
+          $(this).children('.shows').stop().fadeOut(200)
         })
-      }
+      })
     }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -329,27 +331,29 @@
     .posi{
       position: relative;
       margin-top: 2rem;
+      display:flex;
       .logo{
         width: 7rem;
         height: 7rem;
         position: absolute;
-        left: 34rem;
-        top: -6rem;
+        left: 36rem;
+        top: -2rem;
         img{
           width: 7rem;
           height: 7rem;
         }
       }
       .ss{
-        font-size: 2.6rem;
+        font-size: 3rem;
         font-weight: bolder;
         line-height: 3rem;
         text-align: left;
+        margin: 0 auto;
       }
     }
     .firstp{
-      font-size: 2.6rem;
-      font-weight: bolder;
+      font-size: 2.4rem;
+      //font-weight: bolder;
       line-height: 5rem;
       text-align: left;
       border-bottom:1px solid #ccc;
@@ -362,22 +366,24 @@
       padding: 0 9rem;
       color: #333;
       margin-bottom: 3rem;
+      text-align: center;
     }
     .people{
       /*display: flex;*/
       width: 100%;
       flex-wrap: wrap;
       padding: 0 6rem;
+      margin-top: 1rem;
       height: 82rem;
-     // background: red;
+      // background: red;
       .one{
-        width: 100%;
+        width: 50%;
         display: flex;
         padding-top: 3rem;
         overflow: hidden;
         //border-bottom: 1px dashed #ccc;
         position: relative;
-       // background: #fff;
+        background: linear-gradient(90deg,#eee,#fff);
         .pic{
           width: 7.5rem;
           height: 8.5rem;
@@ -434,7 +440,7 @@
           left: 12rem;
           top: 8.5rem;
           box-shadow:5px 5px 5px #ccc;
-          background: #fff;
+          background: linear-gradient(90deg,#eee,#fff);
           display: none;
           img{
             width: 5rem;
@@ -482,11 +488,12 @@
         }
       }
       .two{
-        padding-left: 52rem;
+        left: 49rem;
         top: -10rem;
+        background: linear-gradient(90deg,#fff,#eee);
         .pic{
           position: absolute;
-          right: 8.8rem;
+          right: 12.8rem;
         }
         .shows{
           left: -20.5rem;
@@ -498,11 +505,12 @@
         top: -14rem;
       }
       .four{
-        padding-left: 52rem;
-        top: -22rem;
+        left: 49rem;
+        top: -21rem;
+        background: linear-gradient(90deg,#fff,#eee);
         .pic{
           position: absolute;
-          right: 8.8rem;
+          right: 12.8rem;
         }
         .shows{
           left: -20.5rem;

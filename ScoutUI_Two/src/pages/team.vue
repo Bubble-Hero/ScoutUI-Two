@@ -26,6 +26,6 @@
     /*margin-top: 65px;*/
   }
   .all{
-
+    height: 100%;
   }
 </style>
