@@ -28,6 +28,14 @@ import form from "../components/allContents/pc-table/Form"
 import input from "../components/allContents/pc-table/Input"
 import chart from "../components/allContents/pc-table/Chart"
 
+/**
+ * 登录注册子路由
+ */
+import login1 from "../components/allContents/loginRegister/LoginSubCompon/loginComponCon1"
+import login2 from "../components/allContents/loginRegister/LoginSubCompon/LoginComCon2"
+import loginCom from "../components/allContents/loginRegister/LoginSubCompon/loginCompon"
+
+
 import index from '@/pages/index'
 import team from '@/pages/team'
 
@@ -38,8 +46,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'index',
+      redirect:'index',
+      component: index
     },
     {
       path: '/case',
@@ -77,8 +86,15 @@ export default new Router({
         /**
          * 登陆注册组件子路由
          */
-        {path: 'Login', component: Login},
+        {path: 'Login', component: Login,
+          children:[
+            {path: '', redirect: "login1"},
+            {path: 'login1', component: login1},
+            {path: 'login2', component: login2}
+          ]
+        },
         {path: 'Register', component: Register},
+
         /**
          * pc端 导航组件
          */

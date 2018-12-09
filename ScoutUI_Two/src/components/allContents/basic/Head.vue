@@ -16,16 +16,14 @@
       <!--代码展示框1-->
       <div class="codeBox introBox">
         <h1>代码展示</h1>
-        <div class="introBoxContent">
+        <div class="introBoxContent" style="height: 300px;overflow: auto;">
           <!--------------------------------下方是代码展示区-->
-          <textarea style="resize:none;" cols="30" rows="8" readonly>
-            <ul>
-              <li>关于 Scout UI</li>
-              <li>设计理念</li>
-              <li>兼容</li>
-              <li>相关链接</li>
-            </ul>
-          </textarea>
+          <script type="syntaxhighlighter" class="brush:html"><![CDATA[
+{{data1}}
+          ]]></script>
+          <script type="syntaxhighlighter" class="brush:css"><![CDATA[
+{{data2}}
+          ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
       </div>
@@ -33,23 +31,110 @@
       <div class="showBox introBox">
         <h1>效果展示</h1>
         <!--效果展示盒子，放完效果将内联高度删除-->
-        <div class="introBoxContent" style="height: 200px;">
+        <div class="introBoxContent"style="height: 400px;width: 50%;">
           <!--------------------------------下方是效果组件展示区-->
-          ^(oo)^233333
+          <header01-lc></header01-lc>
           <!--------------------------------上方是效果组件展示区-->
         </div>
       </div>
-
+      <!--代码展示框2-->
+      <div class="codeBox introBox">
+        <h1>代码展示</h1>
+        <div class="introBoxContent" style="height: 300px;overflow: auto;">
+          <!--------------------------------下方是代码展示区-->
+          <script type="syntaxhighlighter" class="brush:html"><![CDATA[
+{{data3}}
+          ]]></script>
+          <script type="syntaxhighlighter" class="brush:css"><![CDATA[
+{{data4}}
+          ]]></script>
+          <!--------------------------------上方是代码展示区-->
+        </div>
+      </div>
+      <!--效果展示框2-->
+      <div class="showBox introBox">
+        <h1>效果展示</h1>
+        <!--效果展示盒子，放完效果将内联高度删除-->
+        <div class="introBoxContent" style="height: 400px;width: 50%;">
+          <!--------------------------------下方是效果组件展示区-->
+          <header02-lc></header02-lc>
+          <!--------------------------------上方是效果组件展示区-->
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+  import Header01Lc from "./lc-elements/header01-lc";
+  import Header02Lc from "./lc-elements/header02-lc";
   export default {
     name: "Header",
+    components: {Header02Lc, Header01Lc},
     data(){
       return{
-
+          data1:"" +
+            "<header>\n" +
+            "      <router-link to=\"/find\"><i class=\"iconfont xxxxx\">&#xxxxx;</i></router-link>\n" +
+            "      <span>xxxxx</span>\n" +
+            "      <p><i class=\"iconfont xxxxx\">&#xxxxx;</i></p>\n" +
+            "</header>",
+        data2:""+
+            "<style lang=\"scss\" scoped>\n" +
+            "  header{\n" +
+            "    width: 100%;\n" +
+            "    line-height: 5rem;\n" +
+            "    //margin-top: 40px;\n" +
+            "    display: flex;\n" +
+            "    justify-content: space-between;\n" +
+            "    align-items: center;\n" +
+            "    background: #f9f9f9;\n" +
+            "    border-bottom: 1px solid #bdbdbd;\n" +
+            "    z-index: 2;\n" +
+            "    padding: 0 1.2rem;\n" +
+            "  }\n" +
+            "  .headeri{\n" +
+            "    font-size: 2.4rem;\n" +
+            "    color: #292929;\n" +
+            "    height: 100%;\n" +
+            "    line-height: 5rem;\n" +
+            "  }\n" +
+            "  header span{\n" +
+            "    color: black;\n" +
+            "    font-size: 1.6rem;\n" +
+            "  }\n" +
+            "\n" +
+            "  </style>",
+        data3:"" +
+          "<header>\n" +
+          "    <router-link to=\"/find\"><i class=\"iconfont headeri\">&#xxxxx;</i></router-link>\n" +
+          "    <span>xxxxxx</span>\n" +
+          "    <p><i class=\"iconfont headeri\">&#xxxxx;</i></p>\n" +
+          "  </header>",
+          data4:""+
+          "<style lang=\"scss\" scoped>\n" +
+          "  header{\n" +
+          "    width: 100%;\n" +
+          "    line-height: 5rem;\n" +
+          "    //margin-top: 40px;\n" +
+          "    display: flex;\n" +
+          "    justify-content: space-between;\n" +
+          "    align-items: center;\n" +
+          "    background: #f9f9f9;\n" +
+          "    border-bottom: 1px solid #bdbdbd;\n" +
+          "    z-index: 2;\n" +
+          "    padding: 0 1.2rem;\n" +
+          "  }\n" +
+          "  .headeri{\n" +
+          "    font-size: 2.4rem;\n" +
+          "    color: #292929;\n" +
+          "    height: 100%;\n" +
+          "    line-height: 5rem;\n" +
+          "  }\n" +
+          "  header span{\n" +
+          "    color: black;\n" +
+          "    font-size: 1.6rem;\n" +
+          "  }"
       }
     }
   }

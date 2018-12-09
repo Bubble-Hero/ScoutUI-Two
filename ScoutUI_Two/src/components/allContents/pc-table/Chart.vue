@@ -9,24 +9,19 @@
 
       <!----------------------------------------组件介绍框2-->
       <div class="introBox">
-        <h1>图表</h1>
+        <h1>幻灯片</h1>
         <div class="introBoxContent">
-          <h2>用途：</h2>
+          <h2>用途：幻灯片组件，用于循环播放元素图像或文本幻灯片（如轮播）。</h2>
         </div>
       </div>
       <!--代码展示框2-->
       <div class="codeBox introBox">
         <h1>代码展示</h1>
-        <div class="introBoxContent">
+        <div class="introBoxContent" style="max-height: 350px;overflow: auto">
           <!--------------------------------下方是代码展示区-->
-          <textarea style="resize:none;" cols="30" rows="8" readonly>
-            <ul>
-              <li>关于 Scout UI</li>
-              <li>设计理念</li>
-              <li>兼容</li>
-              <li>相关链接</li>
-            </ul>
-          </textarea>
+          <script type="syntaxhighlighter" class="brush:html"><![CDATA[
+{{data1}}
+          ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
       </div>
@@ -34,9 +29,9 @@
       <div class="showBox introBox">
         <h1>效果展示</h1>
         <!--效果展示盒子，放完效果将内联高度删除-->
-        <div class="introBoxContent" style="height: 200px;">
+        <div class="introBoxContent" style="height: 350px;">
           <!--------------------------------下方是效果组件展示区-->
-          ^(oo)^233333
+          <chart-lc></chart-lc>
           <!--------------------------------上方是效果组件展示区-->
         </div>
       </div>
@@ -45,23 +40,43 @@
 </template>
 
 <script>
+  import ChartLc from "./lc/chart-lc";
   export default {
     name: "Chart",
+    components: {ChartLc},
     data(){
       return{
-        // "contentData":[
-        //   {
-        //     "header2":"顶部组件",
-        //     "introContent":"用途：用于移动端顶部，具体用于概括本页面所属分类。",
-        //     "code":"<ul>\n" +
-        //       "              <li>关于 Scout UI</li>\n" +
-        //       "              <li>设计理念</li>\n" +
-        //       "              <li>兼容</li>\n" +
-        //       "              <li>相关链接</li>\n" +
-        //       "            </ul>"
-        //   },
-
-        // ]
+        data1:"<div>\n" +
+          "      <div id=\"myCarousel\" class=\"carousel slide\">\n" +
+          "        <!-- 轮播（Carousel）指标 -->\n" +
+          "        <ol class=\"carousel-indicators\">\n" +
+          "          <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
+          "          <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
+          "          <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
+          "        </ol>\n" +
+          "        <!-- 轮播（Carousel）项目 -->\n" +
+          "        <div class=\"carousel-inner\">\n" +
+          "          <div class=\"item active\">\n" +
+          "            <img src=\"../../../../../static/img/bbg.png\" alt=\"First slide\">\n" +
+          "          </div>\n" +
+          "          <div class=\"item\">\n" +
+          "            <img src=\"../../../../../static/img/bg2.jpg\" alt=\"Second slide\">\n" +
+          "          </div>\n" +
+          "          <div class=\"item\">\n" +
+          "            <img src=\"../../../../../static/img/bg3.jpg\" alt=\"Third slide\">\n" +
+          "          </div>\n" +
+          "        </div>\n" +
+          "        <!-- 轮播（Carousel）导航 -->\n" +
+          "        <a class=\"left carousel-control\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">\n" +
+          "          <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>\n" +
+          "          <span class=\"sr-only\">Previous</span>\n" +
+          "        </a>\n" +
+          "        <a class=\"right carousel-control\" href=\"#myCarousel\" role=\"button\" data-slide=\"next\">\n" +
+          "          <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>\n" +
+          "          <span class=\"sr-only\">Next</span>\n" +
+          "        </a>\n" +
+          "      </div>\n" +
+          "    </div>"
       }
     }
   }
