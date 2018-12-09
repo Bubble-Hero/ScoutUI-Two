@@ -1,9 +1,10 @@
 <template>
-  <div class="team">
+  <div class="all">
     <main>
       <right-introduce></right-introduce>
       <comm></comm>
     </main>
+
   </div>
 </template>
 
@@ -21,10 +22,10 @@
   main{
     width: 100%;
     /*background: red;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*margin-top: 65px;*/
   }
-  .team{
-    background: #fff;
+  .all{
+
   }
 </style>

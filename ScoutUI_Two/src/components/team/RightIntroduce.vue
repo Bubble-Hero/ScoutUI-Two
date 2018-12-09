@@ -8,19 +8,14 @@
             <img src="../../../static/img/LOGO-transparent.png" alt="">
           </a>
         </div>
-        <!--<div class="git">-->
-          <!--<a href="https://github.com/Bubble-Hero"  target="_blank">-->
-            <!--<i class="iconfont">&#xe648;</i>-->
-            <!--<input type="button" value="GitHub">-->
-          <!--</a>-->
-        <!--</div>-->
-        <p class="firstp">我们的团队</p>
+        <!--<p class="ss">ScoutUI</p>-->
       </div>
 
       <p class="we">我们是一个思维活跃、讲求协同创新的技术型团队，颜值与技术支撑着一切，承担着客户公司商业与项目的核心研发任务，是项目建设的核心基础，我们的工作涉及大量的与各部门、各单位的沟通协调，所以，我们要求团队成员不仅需要过硬的专业水平，还必须爱岗敬业，严格遵循职业操守。</p>
       <p class="we">选我们，就对了！</p>
+      <p class="firstp">核心团队</p>
       <div class="people">
-        <div class="one">
+        <div class="one" style="padding-left: 2rem">
           <div class="pic">
             <img src="../../../static/img/bb1.jpg" alt="">
             <div class="shows">
@@ -45,7 +40,7 @@
             <li>
               <a href="">
                 <i class="iconfont">&#xe6aa;</i>
-                <p>CORE FOCUS <span>scoutUI scoutUI-templates</span></p>
+                <p><span>scoutUI scoutUI-templates</span></p>
               </a>
             </li>
             <li>
@@ -57,13 +52,13 @@
             <li>
               <a href="">
                 <i class="iconfont">&#xe501;</i>
-                <p>中文English Tiếng Việt</p>
+                <p>中文English</p>
               </a>
             </li>
             <li>
               <a href="">
                 <i class="iconfont">&#xe648;</i>
-                <p><span>git@github.com:BubbleHero/ScoutUI.git</span></p>
+                <p><span>@github.com:BubbleHero</span></p>
               </a>
             </li>
             <li>
@@ -75,7 +70,7 @@
           </ul>
         </div>
 
-        <div class="one">
+        <div class="one two">
           <div class="pic">
             <img src="../../../static/img/2.jpg" alt="">
             <div class="shows">
@@ -100,7 +95,7 @@
             <li>
               <a href="">
                 <i class="iconfont">&#xe6aa;</i>
-                <p>CORE FOCUS <span> scoutUI-router</span></p>
+                <p><span>scoutUI-router</span></p>
               </a>
             </li>
             <li>
@@ -118,7 +113,7 @@
             <li>
               <a href="">
                 <i class="iconfont">&#xe648;</i>
-                <p><span>git@github.com:BubbleHero/ScoutUI.git</span></p>
+                <p><span>@github.com:BubbleHero</span></p>
               </a>
             </li>
             <li>
@@ -130,7 +125,7 @@
           </ul>
         </div>
 
-        <div class="one">
+        <div class="one three">
           <div class="pic">
             <img src="../../../static/img/3.png" alt="">
             <div class="shows">
@@ -150,12 +145,12 @@
               <a href="">Janew</a>
             </li>
             <li>
-              <a href=""> Senior front-end engineer</a>
+              <a href="">Senior engineer</a>
             </li>
             <li>
               <a href="">
                 <i class="iconfont">&#xe6aa;</i>
-                <p>CORE FOCUS <span>scoutUIx scoutUI-router</span></p>
+                <p><span>scoutUIx scoutUI-router</span></p>
               </a>
             </li>
             <li>
@@ -167,13 +162,13 @@
             <li>
               <a href="">
                 <i class="iconfont">&#xe501;</i>
-                <p>中文  English</p>
+                <p>中文English</p>
               </a>
             </li>
             <li>
               <a href="">
                 <i class="iconfont">&#xe648;</i>
-                <p><span>git@github.com:BubbleHero/ScoutUI.git</span></p>
+                <p><span>@github.com:BubbleHero</span></p>
               </a>
             </li>
             <li>
@@ -185,7 +180,7 @@
           </ul>
         </div>
 
-        <div class="one">
+        <div class="one four">
           <div class="pic">
             <img src="../../../static/img/1.jpg" alt="">
             <div class="shows">
@@ -205,12 +200,12 @@
               <a href="">Rainment</a>
             </li>
             <li>
-              <a href="">Senior front-end engineer & designer</a>
+              <a href="">Senior engineer</a>
             </li>
             <li>
               <a href="">
                 <i class="iconfont">&#xe6aa;</i>
-                <p>CORE FOCUS <span>  news.scoutUI.org</span></p>
+                <p><span>news.scoutUI.org</span></p>
               </a>
             </li>
             <li>
@@ -222,13 +217,13 @@
             <li>
               <a href="">
                 <i class="iconfont">&#xe501;</i>
-                <p>中文  English</p>
+                <p>中文English</p>
               </a>
             </li>
             <li>
               <a href="">
                 <i class="iconfont">&#xe648;</i>
-                <p><span>git@github.com:BubbleHero/ScoutUI.git</span></p>
+                <p><span>@github.com:BubbleHero</span></p>
               </a>
             </li>
             <li>
@@ -242,9 +237,9 @@
 
         <div class="one last">
           <div class="pic">
-            <img src="../../../static/img/n-t-1.png" alt="">
+            <img src="../../../static/img/t-2.jpg" alt="">
             <div class="shows">
-              <img src="../../../static/img/n-t-1.png" alt="">
+              <img src="../../../static/img/t-2.jpg" alt="">
               <div class="shp">
                 <p>Joodie</p>
                 <p>Senior engineer</p>
@@ -260,12 +255,12 @@
               <a href="">Joodie</a>
             </li>
             <li>
-              <a href=""> Senior front-end engineer</a>
+              <a href="">Senior engineer</a>
             </li>
             <li>
               <a href="">
                 <i class="iconfont">&#xe6aa;</i>
-                <p>CORE FOCUS <span> scoutUI-router</span></p>
+                <p><span>scoutUI-router</span></p>
               </a>
             </li>
             <li>
@@ -277,13 +272,13 @@
             <li>
               <a href="">
                 <i class="iconfont">&#xe501;</i>
-                <p>中文  English</p>
+                <p>中文English</p>
               </a>
             </li>
             <li>
               <a href="">
                 <i class="iconfont">&#xe648;</i>
-                <p><span>git@github.com:BubbleHero/ScoutUI.git</span></p>
+                <p><span>@github.com:BubbleHero</span></p>
               </a>
             </li>
             <li>
@@ -321,14 +316,16 @@
 <style lang="scss" scoped>
   .team{
     display: flex;
+
   }
   .introduce{
-    background: #fff;
-    overflow: hidden;
+    /*background: #fff;*/
+    //overflow: hidden;
     width: 100%;
-    padding: 6rem 3rem;
-    padding-bottom: 5rem;
-    height: 100%;
+    padding: 0rem 3rem;
+    margin-top: 6rem;
+    //padding-bottom: 5rem;
+    //height: 100%;
     .posi{
       position: relative;
       margin-top: 2rem;
@@ -337,76 +334,69 @@
         height: 7rem;
         position: absolute;
         left: 34rem;
-        top: -2rem;
+        top: -6rem;
         img{
           width: 7rem;
           height: 7rem;
         }
       }
-      /*.git{*/
-        /*position: absolute;*/
-        /*right: 14rem;*/
-        /*top: 13rem;*/
-        /*a{*/
-          /*display: block;*/
-          /*background: #17b6ad;*/
-          /*color: #fff;*/
-          /*line-height: 2.5rem;*/
-          /*width: 8rem;*/
-          /*text-align: center;*/
-          /*input{*/
-            /*border: 0;*/
-            /*background: #17b6ad;;*/
-          /*}*/
-        /*}*/
-      /*}*/
-      .firstp{
+      .ss{
         font-size: 2.6rem;
         font-weight: bolder;
         line-height: 3rem;
-        text-align: center;
+        text-align: left;
       }
+    }
+    .firstp{
+      font-size: 2.6rem;
+      font-weight: bolder;
+      line-height: 5rem;
+      text-align: left;
+      border-bottom:1px solid #ccc;
+      margin:0 11rem
     }
     .we{
       margin: 4rem auto;
       font-size: 15px;
       line-height: 3rem;
       padding: 0 9rem;
-      color: dimgray;
+      color: #333;
       margin-bottom: 3rem;
     }
     .people{
-      display: flex;
+      /*display: flex;*/
       width: 100%;
       flex-wrap: wrap;
       padding: 0 6rem;
+      height: 82rem;
+     // background: red;
       .one{
-        width: 50%;
+        width: 100%;
         display: flex;
         padding-top: 3rem;
         overflow: hidden;
-        border-bottom: 1px dashed #ccc;
+        //border-bottom: 1px dashed #ccc;
         position: relative;
        // background: #fff;
         .pic{
-          width: 6rem;
-          height: 6rem;
+          width: 7.5rem;
+          height: 8.5rem;
           margin-top: 1.5rem;
           margin-left: 2rem;
           border-radius: 50%;
-          position: relative;
+          //position: absolute;
           z-index: 3;
           img{
-            width: 5.5rem;
-            height: 5.5rem;
-            border-radius: 50%;
+            width: 7.5rem;
+            height: 8.5rem;
+            //border-radius: 50%;
             cursor: pointer;
           }
         }
         ul{
           padding-bottom: 4rem;
           li{
-            line-height: 2.8rem;
+            line-height: 2rem;
             text-align: center;
             a{
               display: flex;
@@ -415,7 +405,7 @@
               font-size: 1.5rem;
               .iconfont{
                 position: absolute;
-                top: .2rem;
+                top: .6rem;
                 left: 3.1rem;
                 font-size: 1.2rem;
               }
@@ -441,8 +431,8 @@
           height: 12rem;
           border: 1px solid #ccc;
           position: absolute;
-          left: 6rem;
-          top: 4rem;
+          left: 12rem;
+          top: 8.5rem;
           box-shadow:5px 5px 5px #ccc;
           background: #fff;
           display: none;
@@ -451,6 +441,7 @@
             height: 5rem;
             margin-top: 1rem;
             margin-left: 1rem;
+            border-radius: 50%;
             display: inline-block;
           }
           .shp{
@@ -490,13 +481,38 @@
           }
         }
       }
-      .last{
-        width: 100%;
+      .two{
+        padding-left: 52rem;
+        top: -10rem;
+        .pic{
+          position: absolute;
+          right: 8.8rem;
+        }
+        .shows{
+          left: -20.5rem;
+          top: 4rem;
+        }
       }
-      /*.one:nth-of-type(2) .pic{*/
-        /*position: absolute;*/
-        /*right: 2rem;*/
-      /*}*/
+      .three{
+        padding-left: 2rem;
+        top: -14rem;
+      }
+      .four{
+        padding-left: 52rem;
+        top: -22rem;
+        .pic{
+          position: absolute;
+          right: 8.8rem;
+        }
+        .shows{
+          left: -20.5rem;
+          top: 4rem;
+        }
+      }
+      .last{
+        padding-left: 2rem;
+        top: -28rem;
+      }
     }
     span{
       color: #17b6ad;
