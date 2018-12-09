@@ -19,16 +19,17 @@
             <span>下载量：<em class="site-showdowns">300</em></span>
           </div>
           <div class="f-box">
-            <a class="btn"><i class="iconfont">&#xe62d;</i>组件库</a>
-            <a class="btn"><i class="iconfont">&#xe697;</i><i class="iconfont"></i>实例</a>
-            <a class="btn"><i class="iconfont">&#xeb40;</i>团队</a>
+            <router-link to="/compo" class="btn"><i class="iconfont">&#xe62d;</i>组件库</router-link>
+            <router-link to="/case" class="btn"><i class="iconfont">&#xe697;</i><i class="iconfont"></i>实例</router-link>
+            <router-link to="/team" class="btn"><i class="iconfont">&#xeb40;</i>团队</router-link>
             <a class="btn" href="https://github.com/Bubble-Hero" target="_blank"><i class="iconfont">&#xef45;</i>GITHUB</a>
           </div>
           <rotate-box></rotate-box>
           <copyright></copyright>
         </div>
         <div class="swiper-slide index-two">
-
+          <case-detail></case-detail>
+          <rotate-box></rotate-box>
         </div>
         <div class="swiper-slide index-three"><p>Slide 3</p></div>
       </div>
@@ -42,10 +43,11 @@
   import Swiper from "swiper"
   import Copyright from "../components/footer-copyright/copyright";
   import RotateBox from "../components/rotateBox";
+  import CaseDetail from "./caseDetail";
 
     export default {
         name: "index",
-      components: {RotateBox, Copyright},
+      components: {CaseDetail, RotateBox, Copyright},
       methods:{
           swipers(){
             var swiper = new Swiper('.swiper-container',{
@@ -149,6 +151,7 @@
       font-size: 1.3rem;
       margin-left:2rem;
       color: #ccc;
+      height: 3.3rem;
       i{
         position: relative;
         top:.2rem;
