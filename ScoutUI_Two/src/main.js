@@ -3,10 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+ import "jquery"
 
-import "jquery"
 import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap"
+import "bootstrap/dist/js/bootstrap.min"
+
 import "./assets/css/base.css"
 
 import Swiper from 'swiper'

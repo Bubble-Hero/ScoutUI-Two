@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+//案例页面
 import Case from '@/pages/case'
 import caseCon1 from '@/components/case/caseCon1'
 import caseCon2 from '@/components/case/caseCon2'
-
 import caseDetail from '@/pages/caseDetail'
-
+import caseAnswer from '@/pages/caseAnswer'
 
 /**
  * 组件页面路由（及其子路由）配置
@@ -102,6 +102,11 @@ export default new Router({
       path: '/team',
       name:"team",
       component: team
+    },
+    {
+      path: '/caseAnswer',
+      name:"caseAnswer",
+      component: caseAnswer
     }
   ]
 })
