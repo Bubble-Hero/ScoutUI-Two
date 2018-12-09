@@ -14,7 +14,6 @@
       <span class="liTitle">菜单组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
       <router-link tag="li" to="/compo/goodlistmenu"><i class="iconfont">&#xe64c;</i>商品列表菜单</router-link>
-      <router-link tag="li" to="/compo/slideupmenu"><i class="iconfont">&#xe65d;</i>上拉菜单</router-link>
       <router-link tag="li" to="/compo/swiperMenu"><i class="iconfont">&#xe519;</i>轮播菜单</router-link>
       <router-link tag="li" to="/compo/classifyMenu"><i class="iconfont">&#xe642;</i>分类菜单</router-link>
       <router-link tag="li" to="/compo/navMenu"><i class="iconfont">&#xe684;</i>导航菜单</router-link>
@@ -30,13 +29,13 @@
     <ul class="slideUL">
       <router-link tag="li" to="/compo/menunav"><i class="iconfont">&#xe6bc;</i>Menu 导航</router-link>
       <router-link tag="li" to="/compo/sidenav"><i class="iconfont">&#xe62d;</i>侧边栏导航</router-link>
-      <router-link tag="li" to="/compo/slidenav"><i class="iconfont">&#xe665;</i>下拉导航</router-link>
+      <router-link tag="li" to="/compo/slidenav"><i class="iconfont">&#xe665;</i>分类导航</router-link>
     </ul>
       <span class="liTitle">列表组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
       <router-link tag="li" to="/compo/form"><i class="iconfont">&#xe689;</i>表格</router-link>
       <router-link tag="li" to="/compo/input"><i class="iconfont">&#xe6cf;</i>表单</router-link>
-      <router-link tag="li" to="/compo/chart"><i class="iconfont">&#xe5b9;</i>图表</router-link>
+      <router-link tag="li" to="/compo/chart"><i class="iconfont">&#xe5b9;</i>幻灯片</router-link>
     </ul>
       <span class="liTitle">**组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">

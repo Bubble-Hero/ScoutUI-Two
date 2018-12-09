@@ -1,0 +1,33 @@
+<template>
+    <div>
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading" style="background: #cccccc;border: 1px solid gray;">Panel heading</div>
+        <div class="panel-body">
+          <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lac
+            inia bibendum nulla sed consectetur. Aenean eu leo quam.
+            Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id
+            dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "form-lc"
+    }
+</script>
+
+<style scoped>
+
+</style>

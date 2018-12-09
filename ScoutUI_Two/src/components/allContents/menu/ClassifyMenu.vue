@@ -11,22 +11,17 @@
       <div class="introBox">
         <h1>分类菜单</h1>
         <div class="introBoxContent">
-          <h2>用途：</h2>
+          <h2>用途：用于移动端种类的分组，便于清晰地了解详情。</h2>
         </div>
       </div>
       <!--代码展示框2-->
       <div class="codeBox introBox">
         <h1>代码展示</h1>
-        <div class="introBoxContent">
+        <div class="introBoxContent" style="max-height: 300px;overflow: auto">
           <!--------------------------------下方是代码展示区-->
-          <textarea style="resize:none;" cols="30" rows="8" readonly>
-            <ul>
-              <li>关于 Scout UI</li>
-              <li>设计理念</li>
-              <li>兼容</li>
-              <li>相关链接</li>
-            </ul>
-          </textarea>
+          <script type="syntaxhighlighter" class="brush:html"><![CDATA[
+{{data}}
+          ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
       </div>
@@ -34,9 +29,9 @@
       <div class="showBox introBox">
         <h1>效果展示</h1>
         <!--效果展示盒子，放完效果将内联高度删除-->
-        <div class="introBoxContent" style="height: 200px;">
+        <div class="introBoxContent" style="min-height: 300px;">
           <!--------------------------------下方是效果组件展示区-->
-          ^(oo)^233333
+          <classify-menu-lc></classify-menu-lc>
           <!--------------------------------上方是效果组件展示区-->
         </div>
       </div>
@@ -46,10 +41,164 @@
 </template>
 
 <script>
+  import ClassifyMenuLc from "./classifyMenu/ClassifyMenu-lc";
   export default {
     name: "ClassifyMenu",
+    components: {ClassifyMenuLc},
     data(){
       return{
+        data:"" +
+          "\n" +
+          "  <div id=\"fenlei\">\n" +
+          "    <ul>\n" +
+          "      <li>\n" +
+          "        <a href=\"\">\n" +
+          "          <i><img src=\"../../../../../static/img/ershoufang.gif\"/></i>\n" +
+          "          <span>二手房</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"xinfang.html\">\n" +
+          "          <i><img src=\"../../../../../static/img/xinfang.gif\"/></i>\n" +
+          "          <span>新房</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"\">\n" +
+          "          <i><img src=\"../../../../../static/img/zufang.gif\"/></i>\n" +
+          "          <span>租房</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"\">\n" +
+          "          <i><img src=\"../../../../../static/img/haiwai.gif\"/></i>\n" +
+          "          <span>海外</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"\">\n" +
+          "          <i><img src=\"../../../../../static/img/zhuangxiu.gif\"/></i>\n" +
+          "          <span>装修</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "    </ul>\n" +
+          "    <ul>\n" +
+          "      <li>\n" +
+          "        <a href=\"\">\n" +
+          "          <i><img src=\"../../../../../static/img/ershoufang.gif\"/></i>\n" +
+          "          <span>帮我找房</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"baike.html\">\n" +
+          "          <i><img src=\"../../../../../static/img/haiwai.gif\"/></i>\n" +
+          "          <span>百科</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"\">\n" +
+          "          <i><img src=\"../../../../../static/img/xinfang.gif\"/></i>\n" +
+          "          <span>找小区</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"\">\n" +
+          "          <i><img src=\"../../../../../static/img/zhuangxiu.gif\"/></i>\n" +
+          "          <span>查成交</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "      <li>\n" +
+          "        <a href=\"jingji.html\">\n" +
+          "          <i><img src=\"../../../../../static/img/zufang.gif\"/></i>\n" +
+          "          <span>找经纪人</span>\n" +
+          "        </a>\n" +
+          "      </li>\n" +
+          "    </ul>\n" +
+          "  </div>\n" +
+          "\n" +
+          "\n" +
+          "<style scoped>\n" +
+          "  .con-section{\n" +
+          "    width: 100%;\n" +
+          "    /*height: 100%;*/\n" +
+          "    padding: 0 20px 50px;\n" +
+          "    border-bottom: 1px solid #17b6ad;\n" +
+          "  }\n" +
+          "  ul li h1{\n" +
+          "    width: 100%;\n" +
+          "    line-height: 40px;\n" +
+          "    font-size: 22px;\n" +
+          "    background: #fff;\n" +
+          "    margin: 20px 0 10px;\n" +
+          "  }\n" +
+          "  ul li p{\n" +
+          "    font-size: 14px;\n" +
+          "    line-height: 24px;\n" +
+          "    margin-bottom: 20px;\n" +
+          "    margin-right: 140px;\n" +
+          "  }\n" +
+          "  .ullipLast{\n" +
+          "    font-size: 13px;\n" +
+          "    line-height: 20px;\n" +
+          "    margin-bottom: 12px;\n" +
+          "  }\n" +
+          "  .case{\n" +
+          "    line-height: 20px;\n" +
+          "    margin: 0;\n" +
+          "    display: flex;\n" +
+          "    font-size: 16px;\n" +
+          "    justify-content: space-between;\n" +
+          "  }\n" +
+          "  .code{\n" +
+          "    width:49%;\n" +
+          "    height: 497px;\n" +
+          "    border:1px solid #dddddd }\n" +
+          "  .code-header{\n" +
+          "    padding: 5px 10px;\n" +
+          "    border-bottom: 1px solid #dddddd;\n" +
+          "    border-top-left-radius: 3px;\n" +
+          "    border-top-right-radius: 3px;\n" +
+          "    background:#f6f6f6\n" +
+          "  }\n" +
+          "  .code-body{\n" +
+          "    width: 100%;\n" +
+          "    height: 450px;\n" +
+          "    overflow: auto;\n" +
+          "    margin:auto\n" +
+          "  }\n" +
+          "  .right{\n" +
+          "    width: 85%;\n" +
+          "    height: 450px;\n" +
+          "    overflow: auto;\n" +
+          "    margin:auto\n" +
+          "  }\n" +
+          "  textarea{\n" +
+          "    width: 100%;\n" +
+          "    border:none;\n" +
+          "    height: 100%;\n" +
+          "  }\n" +
+          "  .btn-default{\n" +
+          "    color: #17b6ad;\n" +
+          "    background-color: #fff;\n" +
+          "    border-color: #ccc;\n" +
+          "  }\n" +
+          "  .btn{\n" +
+          "\n" +
+          "    display: inline-block;\n" +
+          "    padding: 6px 12px;\n" +
+          "    margin-bottom: 0;\n" +
+          "    font-size: 14px;\n" +
+          "    font-weight: 400;\n" +
+          "    line-height: 1.42857143;\n" +
+          "    text-align: center;\n" +
+          "    white-space: nowrap;\n" +
+          "    vertical-align: middle\n" +
+          "  }\n" +
+          "  .case .result{\n" +
+          "    width:49%;\n" +
+          "    height: 497px;\n" +
+          "    border:1px solid #dddddd }\n" +
+          "</style>"
 
       }
     }
