@@ -38,8 +38,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'index',
+      redirect:'index',
+      component: index
     },
     {
       path: '/case',
