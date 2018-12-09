@@ -82,7 +82,7 @@
     right: 0;
   }
   .screen_half {
-    width: 65%;
+    width: 90%;
     position: absolute;
     height: 100%;
   }

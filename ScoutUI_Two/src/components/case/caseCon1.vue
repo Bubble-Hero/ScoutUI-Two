@@ -12,7 +12,7 @@
         </div>
         <div class="col-md-6">
           <div class="con">
-            <img src="../../assets/img/x1.png"/>
+            <img src="../../../static/img/x2.png"/>
           </div>
           <div class="mask"></div>
         </div>
@@ -20,7 +20,7 @@
       <li>
         <div class="col-md-6">
           <div class="con">
-            <img src="../../assets/img/x1.png"/>
+            <img src="../../../static/img/x3.jpg"/>
           </div>
           <div class="mask">
             <h2>美团响应式后台管理系统</h2>
@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-6">
           <div class="con">
-            <img src="../../assets/img/x1.png"/>
+            <img src="../../../static/img/x4.jpg"/>
           </div>
           <div class="mask"></div>
         </div>
@@ -73,7 +73,7 @@
   .row{
     width: 100%;
     height: 400px;
-  background: #f60}
+  }
   .row ul{list-style: none;
   padding: 0}
   .row ul li{
@@ -88,7 +88,7 @@
     height: 400px;
     background:linear-gradient(to bottom,#fff,#f2f2f2);
     overflow: hidden;
-    box-shadow:10px 10px 5px #ccc;
+    /*box-shadow:10px 10px 5px #ccc;*/
   }
   .col-md-6:hover .mask{
     transform: translateY(400px);
@@ -105,6 +105,13 @@
     width: 100%;
     height: 400px;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.6;
+    display: flex;
+  }
+  .mask h2{
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    margin: auto;
   }
 </style>

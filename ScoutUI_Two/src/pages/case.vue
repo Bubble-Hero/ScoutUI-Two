@@ -13,10 +13,7 @@
             <router-link to="/case/caseCon2">移动站</router-link>
           </li>
         </ul>
-        <div class="container">
           <router-view></router-view>
-        </div>
-
       </section>
     </div>
 </template>
@@ -36,14 +33,13 @@
 
 <style scoped>
   .row{
-    width: 100%;
-    height: 100%;
-    background:#f2f2f2;
+    background:#fff;
   }
   .banner{width: 100%;
   height:300px;
   background:url("../assets/img/backimg4.jpg")}
-  section{width:90%;
+  section{
+    width:90%;
   margin: auto;
  }
   .nav{
@@ -52,7 +48,8 @@
     line-height:50px;
     display: flex;
     list-style: none;
-    margin-top: 10px;
+    margin: 20px;
+
   }
   .nav li{
     width:10%;
@@ -62,6 +59,7 @@
     }
 
   a{
+    width: 100%;
     text-decoration: none;
   display: block}
   .link-exact-active{
