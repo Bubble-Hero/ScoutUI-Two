@@ -1,10 +1,10 @@
 <template>
   <div class="navigation">
-    <a class="footernav" to='/find'><i class="navIcon iconfont">&#xe604;</i>首页</a>
-    <a class="footernav" to='/near'><i class="navIcon iconfont">&#xe645;</i>附近</a>
-    <a class="footernav" to='/find'><i class="navIcon iconfont">&#xe6cd;</i>发现</a>
-    <a class="footernav" to='/order'><i class="navIcon iconfont">&#xe6cf;</i>订单</a>
-    <a class="footernav" to='/me'><i class="navIcon iconfont">&#xe8da;</i>我的</a>
+    <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe604;</i>首页</a>
+    <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe645;</i>附近</a>
+    <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe6cd;</i>发现</a>
+    <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe6cf;</i>订单</a>
+    <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe8da;</i>我的</a>
   </div>
 
 </template>
@@ -50,7 +50,6 @@
     line-height: 1.5rem;
     text-align: center;
     margin: 0 auto;
-    margin-top: .9em;
     color:#555;
   }
   .navIcon{

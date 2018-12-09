@@ -16,7 +16,7 @@
       <router-link tag="li" to="/compo/goodlistmenu"><i class="iconfont">&#xe64c;</i>商品列表菜单</router-link>
       <router-link tag="li" to="/compo/swiperMenu"><i class="iconfont">&#xe519;</i>轮播菜单</router-link>
       <router-link tag="li" to="/compo/classifyMenu"><i class="iconfont">&#xe642;</i>分类菜单</router-link>
-      <router-link tag="li" to="/compo/navMenu"><i class="iconfont">&#xe684;</i>导航菜单</router-link>
+      <router-link tag="li" to="/compo/navMenu"><i class="iconfont">&#xe684;</i>分享菜单</router-link>
     </ul>
       <span class="liTitle">登录注册组件<img src="../../static/img/side01.png"></span>
 

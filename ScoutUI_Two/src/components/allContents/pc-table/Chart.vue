@@ -20,7 +20,7 @@
         <div class="introBoxContent" style="max-height: 350px;overflow: auto">
           <!--------------------------------下方是代码展示区-->
           <script type="syntaxhighlighter" class="brush:html"><![CDATA[
-{{data}}
+{{data1}}
           ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
@@ -46,33 +46,37 @@
     components: {ChartLc},
     data(){
       return{
-        data:"" +
-          "<div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
+        data1:"<div>\n" +
+          "      <div id=\"myCarousel\" class=\"carousel slide\">\n" +
+          "        <!-- 轮播（Carousel）指标 -->\n" +
           "        <ol class=\"carousel-indicators\">\n" +
-          "          <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>\n" +
-          "          <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>\n" +
-          "          <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>\n" +
+          "          <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n" +
+          "          <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n" +
+          "          <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n" +
           "        </ol>\n" +
+          "        <!-- 轮播（Carousel）项目 -->\n" +
           "        <div class=\"carousel-inner\">\n" +
-          "          <div class=\"carousel-item active\">\n" +
-          "            <img class=\"d-block w-100\" src=\"../../../../../static/img/bbg.png\" alt=\"First slide\">\n" +
+          "          <div class=\"item active\">\n" +
+          "            <img src=\"../../../../../static/img/bbg.png\" alt=\"First slide\">\n" +
           "          </div>\n" +
-          "          <div class=\"carousel-item\">\n" +
-          "            <img class=\"d-block w-100\" src=\"../../../../../static/img/bg2.jpg\" alt=\"Second slide\">\n" +
+          "          <div class=\"item\">\n" +
+          "            <img src=\"../../../../../static/img/bg2.jpg\" alt=\"Second slide\">\n" +
           "          </div>\n" +
-          "          <div class=\"carousel-item\">\n" +
-          "            <img class=\"d-block w-100\" src=\"../../../../../static/img/bg3.jpg\" alt=\"Third slide\">\n" +
+          "          <div class=\"item\">\n" +
+          "            <img src=\"../../../../../static/img/bg3.jpg\" alt=\"Third slide\">\n" +
           "          </div>\n" +
           "        </div>\n" +
-          "        <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">\n" +
-          "          <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n" +
+          "        <!-- 轮播（Carousel）导航 -->\n" +
+          "        <a class=\"left carousel-control\" href=\"#myCarousel\" role=\"button\" data-slide=\"prev\">\n" +
+          "          <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\"></span>\n" +
           "          <span class=\"sr-only\">Previous</span>\n" +
           "        </a>\n" +
-          "        <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">\n" +
-          "          <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n" +
+          "        <a class=\"right carousel-control\" href=\"#myCarousel\" role=\"button\" data-slide=\"next\">\n" +
+          "          <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\"></span>\n" +
           "          <span class=\"sr-only\">Next</span>\n" +
           "        </a>\n" +
-          "      </div>\n"
+          "      </div>\n" +
+          "    </div>"
       }
     }
   }

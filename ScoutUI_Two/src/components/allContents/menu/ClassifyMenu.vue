@@ -20,7 +20,10 @@
         <div class="introBoxContent" style="max-height: 300px;overflow: auto">
           <!--------------------------------下方是代码展示区-->
           <script type="syntaxhighlighter" class="brush:html"><![CDATA[
-{{data}}
+{{data1}}
+          ]]></script>
+          <script type="syntaxhighlighter" class="brush:css"><![CDATA[
+{{data2}}
           ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
@@ -41,13 +44,13 @@
 </template>
 
 <script>
-  import ClassifyMenuLc from "./classifyMenu/ClassifyMenu-lc";
+  import ClassifyMenuLc from "./lc/ClassifyMenu-lc";
   export default {
     name: "ClassifyMenu",
     components: {ClassifyMenuLc},
     data(){
       return{
-        data:"" +
+        data1:"" +
           "\n" +
           "  <div id=\"fenlei\">\n" +
           "    <ul>\n" +
@@ -115,8 +118,8 @@
           "      </li>\n" +
           "    </ul>\n" +
           "  </div>\n" +
-          "\n" +
-          "\n" +
+          "\n",
+        data2:""+
           "<style scoped>\n" +
           "  .con-section{\n" +
           "    width: 100%;\n" +

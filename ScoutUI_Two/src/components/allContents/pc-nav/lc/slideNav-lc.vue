@@ -8,7 +8,7 @@
             <i class="iconfont">&#xe519;</i>
             <p>
               <span class="sortSpan01">总客户量</span>
-              <span class="sortSpan02 sortSpan02Big">56<span class="sortSpan03">人</span></span>
+              <span class="sortSpan02 sortSpan02Big">***<span class="sortSpan03">人</span></span>
             </p>
           </div>
           <div class="sortBox02">
@@ -25,7 +25,7 @@
             <i class="iconfont">&#xe607;</i>
             <p>
               <span class="sortSpan01">总商家数</span>
-              <span class="sortSpan02">8012<span class="sortSpan03">个</span></span>
+              <span class="sortSpan02">***<span class="sortSpan03">个</span></span>
             </p>
           </div>
           <div class="sortBox02">
@@ -48,7 +48,7 @@
             <i class="iconfont">&#xe6eb;</i>
             <p>
               <span class="sortSpan01">总商品量</span>
-              <span class="sortSpan02">50106<span class="sortSpan03">个</span></span>
+              <span class="sortSpan02">***<span class="sortSpan03">个</span></span>
             </p>
           </div>
           <div class="sortBox02">
@@ -65,7 +65,7 @@
             <i class="iconfont">&#xe63a;</i>
             <p>
               <span class="sortSpan01">合作伙伴</span>
-              <span class="sortSpan02">8<span class="sortSpan03">个</span></span>
+              <span class="sortSpan02">**<span class="sortSpan03">个</span></span>
             </p>
           </div>
           <div class="sortBox02">

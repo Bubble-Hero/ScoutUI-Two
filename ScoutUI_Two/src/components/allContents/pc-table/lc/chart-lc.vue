@@ -1,28 +1,31 @@
 <template>
     <div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
+        <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="../../../../../static/img/bbg.png" alt="First slide">
+          <div class="item active">
+            <img src="../../../../../static/img/bbg.png" alt="First slide">
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../../../../../static/img/bg2.jpg" alt="Second slide">
+          <div class="item">
+            <img src="../../../../../static/img/bg2.jpg" alt="Second slide">
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../../../../../static/img/bg3.jpg" alt="Third slide">
+          <div class="item">
+            <img src="../../../../../static/img/bg3.jpg" alt="Third slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -40,8 +43,8 @@
     width: 80%;
     height: 300px;
   }
-  .w-100{
-    width: 80%;
-    height: 300px;
-  }
+.item img{
+  width: 100%;
+  height: 300px;
+}
 </style>

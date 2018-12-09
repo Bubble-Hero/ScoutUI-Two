@@ -19,7 +19,10 @@
         <div class="introBoxContent" style="max-height: 300px;overflow: auto">
           <!--------------------------------下方是代码展示区-->
           <script type="syntaxhighlighter" class="brush:html"><![CDATA[
-{{data}}
+{{data1}}
+          ]]></script>
+          <script type="syntaxhighlighter" class="brush:css"><![CDATA[
+{{data2}}
           ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
@@ -46,7 +49,7 @@
     components: {SlideNavLc},
     data(){
       return{
-        data:"" +
+        data1:"" +
           "    <div class=\"row\" style=\"margin: 0;\">\n" +
           "      <div class=\"col-xs-6 col-sm-3\">\n" +
           "\n" +
@@ -125,7 +128,8 @@
           "\n" +
           "      </div>\n" +
           "    </div>\n"+
-          "\n" +
+          "\n",
+        data2:""+
           "<style scoped>\n" +
           "  @media (min-width: 768px) and (max-width: 1000px) {\n" +
           "    .sortSpan03{display: none;}\n" +
