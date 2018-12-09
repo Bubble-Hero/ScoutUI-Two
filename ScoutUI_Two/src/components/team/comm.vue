@@ -214,6 +214,7 @@
                   margin-left: 1.5rem;
                   color: #17b6ad;
                   margin-top: .2rem;
+                  text-align: center;
                 }
                 p{
                   line-height: 2rem;
@@ -267,7 +268,7 @@
               line-height: 3rem;
             }
             a{
-              padding-top: 1.3rem;
+              //padding-top: 1.3rem;
               margin-left: 3rem;
 
             }
@@ -287,6 +288,7 @@
         }
         p{
           font-size: 1.4rem;
+          text-align: center;
         }
       }
     }
