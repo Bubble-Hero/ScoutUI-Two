@@ -16,10 +16,13 @@
       <!--代码展示框1-->
       <div class="codeBox introBox">
         <h1>代码展示</h1>
-        <div class="introBoxContent">
+        <div class="introBoxContent" style="height: 300px;overflow: auto;">
           <!--------------------------------下方是代码展示区-->
           <script type="syntaxhighlighter" class="brush:html"><![CDATA[
 {{data1}}
+          ]]></script>
+          <script type="syntaxhighlighter" class="brush:css"><![CDATA[
+{{data2}}
           ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
@@ -28,7 +31,7 @@
       <div class="showBox introBox">
         <h1>效果展示</h1>
         <!--效果展示盒子，放完效果将内联高度删除-->
-        <div class="introBoxContent" style="height: 200px;">
+        <div class="introBoxContent"style="height: 400px;width: 50%;">
           <!--------------------------------下方是效果组件展示区-->
           <header01-lc></header01-lc>
           <!--------------------------------上方是效果组件展示区-->
@@ -37,10 +40,13 @@
       <!--代码展示框2-->
       <div class="codeBox introBox">
         <h1>代码展示</h1>
-        <div class="introBoxContent">
+        <div class="introBoxContent" style="height: 300px;overflow: auto;">
           <!--------------------------------下方是代码展示区-->
           <script type="syntaxhighlighter" class="brush:html"><![CDATA[
-{{data2}}
+{{data3}}
+          ]]></script>
+          <script type="syntaxhighlighter" class="brush:css"><![CDATA[
+{{data4}}
           ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
@@ -49,7 +55,7 @@
       <div class="showBox introBox">
         <h1>效果展示</h1>
         <!--效果展示盒子，放完效果将内联高度删除-->
-        <div class="introBoxContent" style="height: 200px;">
+        <div class="introBoxContent" style="height: 400px;width: 50%;">
           <!--------------------------------下方是效果组件展示区-->
           <header02-lc></header02-lc>
           <!--------------------------------上方是效果组件展示区-->
@@ -72,8 +78,8 @@
             "      <router-link to=\"/find\"><i class=\"iconfont xxxxx\">&#xxxxx;</i></router-link>\n" +
             "      <span>xxxxx</span>\n" +
             "      <p><i class=\"iconfont xxxxx\">&#xxxxx;</i></p>\n" +
-            "</header>\n" +
-            "\n" +
+            "</header>",
+        data2:""+
             "<style lang=\"scss\" scoped>\n" +
             "  header{\n" +
             "    width: 100%;\n" +
@@ -99,13 +105,13 @@
             "  }\n" +
             "\n" +
             "  </style>",
-        data2:"" +
+        data3:"" +
           "<header>\n" +
           "    <router-link to=\"/find\"><i class=\"iconfont headeri\">&#xxxxx;</i></router-link>\n" +
           "    <span>xxxxxx</span>\n" +
           "    <p><i class=\"iconfont headeri\">&#xxxxx;</i></p>\n" +
-          "  </header>\n" +
-          "\n" +
+          "  </header>",
+          data4:""+
           "<style lang=\"scss\" scoped>\n" +
           "  header{\n" +
           "    width: 100%;\n" +

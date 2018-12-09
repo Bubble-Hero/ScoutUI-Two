@@ -17,10 +17,13 @@
       <!--代码展示框2-->
       <div class="codeBox introBox">
         <h1>代码展示</h1>
-        <div class="introBoxContent">
+        <div class="introBoxContent" style="height: 300px;overflow: auto;">
           <!--------------------------------下方是代码展示区-->
-          <script type="syntaxhighlighter" class="brush:js"><![CDATA[
+          <script type="syntaxhighlighter" class="brush:html"><![CDATA[
 {{data1}}
+          ]]></script>
+          <script type="syntaxhighlighter" class="brush:css"><![CDATA[
+{{data2}}
           ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
@@ -29,7 +32,7 @@
       <div class="showBox introBox">
         <h1>效果展示</h1>
         <!--效果展示盒子，放完效果将内联高度删除-->
-        <div class="introBoxContent" style="height: 200px;">
+        <div class="introBoxContent" style="height: 200px;width: 50%;">
           <!--------------------------------下方是效果组件展示区-->
           <footer01-lc></footer01-lc>
           <!--------------------------------上方是效果组件展示区-->
@@ -54,7 +57,8 @@
           "  <router-link class=\"nav\"><i class=\"navIcon iconfont\">&#xe8da;</i>我的</router-link>\n" +
           "</div>\n" +
           "\n" +
-          "<style scoped>\n" +
+          "",
+        data2:"<style scoped>\n" +
           "  .navigation{\n" +
           "    margin-top: 100px;\n" +
           "    padding: 8px;\n" +
@@ -66,14 +70,13 @@
           "    z-index: 10;\n" +
           "    border: 1px solid #eee;\n" +
           "  }\n" +
-          "  .nav{\n" +
+          "  .footernav{\n" +
           "    display: flex;/*这个和下面的 flex-direction属性设置将图片与文字平行排布*/\n" +
           "    flex-direction: column;\n" +
           "    flex: 1;/*设置五个导航条的内容等分*/\n" +
           "    line-height: 1.5rem;\n" +
           "    text-align: center;\n" +
           "    margin: 0 auto;\n" +
-          "    margin-top: .9em;\n" +
           "    color:#555;\n" +
           "  }\n" +
           "  .navIcon{\n" +
