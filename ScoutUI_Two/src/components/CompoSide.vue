@@ -2,45 +2,43 @@
   <div class="side">
     <div class="logo">
       <!--<img src="../../assets/img/LOGO-transparent.png" >-->
-      <p>Scout<b style="color:#641385;">UI</b></p>
+      <p>Scout<b style="">UI</b></p>
     </div>
     <!--。。。。；移动端。。。。。。。-->
     <h4>移动端组件 </h4>
       <span class="liTitle">基础组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <router-link tag="li" to="/compo">顶部组件</router-link>
-      <router-link tag="li" to="/compo/footer">底部组件</router-link>
+      <router-link tag="li" to="/compo"><i class="iconfont">&#xe61e;</i>顶部组件</router-link>
+      <router-link tag="li" to="/compo/footer"><i class="iconfont">&#xe553;</i>底部组件</router-link>
     </ul>
       <span class="liTitle">菜单组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <router-link tag="li" to="/compo/goodlistmenu">商品列表菜单</router-link>
-      <router-link tag="li" to="/compo/slideupmenu">上拉菜单</router-link>
-      <router-link tag="li" to="/compo/swiperMenu">轮播菜单</router-link>
-      <router-link tag="li" to="/compo/classifyMenu">分类菜单</router-link>
-      <router-link tag="li" to="/compo/navMenu">导航菜单</router-link>
+      <router-link tag="li" to="/compo/goodlistmenu"><i class="iconfont">&#xe64c;</i>商品列表菜单</router-link>
+      <router-link tag="li" to="/compo/slideupmenu"><i class="iconfont">&#xe65d;</i>上拉菜单</router-link>
+      <router-link tag="li" to="/compo/swiperMenu"><i class="iconfont">&#xe519;</i>轮播菜单</router-link>
+      <router-link tag="li" to="/compo/classifyMenu"><i class="iconfont">&#xe642;</i>分类菜单</router-link>
+      <router-link tag="li" to="/compo/navMenu"><i class="iconfont">&#xe684;</i>导航菜单</router-link>
     </ul>
       <span class="liTitle">登录注册组件<img src="../../static/img/side01.png"></span>
 
     <ul class="slideUL">
-      <router-link tag="li" to="/compo/Login">登录组件</router-link>
-      <router-link tag="li" to="/compo/Register">注册组件</router-link>
+      <router-link tag="li" to="/compo/Login"><i class="iconfont">&#xe60f;</i>登录组件</router-link>
     </ul>
     <!--。。。。。pc端。。。。。-->
     <h4> PC 端组件 </h4>
       <span class="liTitle">导航组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <li>Menu 导航</li>
-      <li>侧边栏导航</li>
-      <li>下拉导航</li>
+      <router-link tag="li" to="/compo/menunav"><i class="iconfont">&#xe6bc;</i>Menu 导航</router-link>
+      <router-link tag="li" to="/compo/sidenav"><i class="iconfont">&#xe62d;</i>侧边栏导航</router-link>
+      <router-link tag="li" to="/compo/slidenav"><i class="iconfont">&#xe665;</i>下拉导航</router-link>
     </ul>
       <span class="liTitle">列表组件<img src="../../static/img/side01.png"></span>
     <ul class="slideUL">
-      <li>表格</li>
-      <li>表单</li>
-      <li>图表</li>
+      <router-link tag="li" to="/compo/form"><i class="iconfont">&#xe689;</i>表格</router-link>
+      <router-link tag="li" to="/compo/input"><i class="iconfont">&#xe6cf;</i>表单</router-link>
+      <router-link tag="li" to="/compo/chart"><i class="iconfont">&#xe5b9;</i>图表</router-link>
     </ul>
       <span class="liTitle">**组件<img src="../../static/img/side01.png"></span>
-
     <ul class="slideUL">
       <li>***</li>
       <li>***</li>
@@ -50,7 +48,6 @@
 
   </div>
 </template>
-
 <script>
   import $ from "jquery"
     export default {
@@ -78,7 +75,7 @@
     list-style: none;
   }
   .side span:hover{
-    color:#17b6ad;
+    color:#dab4a3;
   }
 
   .liTitle{
@@ -88,11 +85,14 @@
     margin-top: 10px;
   }
   .side li:hover{
-    background:rgba(38,83,87,.7);
-    color:#17b6ad;
+    background:rgba(0,0,0,.2);
+    color:#e2bdaf;
   }
   .slideUL{
     padding: 0;
+  }
+  .slideUL i{
+    margin-right:8px;
   }
   .s-m-b{
     margin-bottom: 30px;
@@ -100,16 +100,12 @@
   .side{
     width: 230px;
     height: 100%;
-    background: #1e3247;
-    padding: 0px 0 40px;
-    border: 1px solid lightgray;
+    background: rgba(0,0,0,.4);
+    padding: 66px 0 40px;
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
     overflow-y: scroll;
-    padding-top:46px;
-    position: relative;
     border:0;
   }
 
@@ -119,23 +115,20 @@
   }
 
   .logo{
-    width: 214px;
-    height: 46px;
-    line-height: 46px;
-    font-size: 20px;
-    color: #17b6ad;
-    background: #0c2a4b;
-    padding-left: 16px;
+    width: 228px;
+    /*color: ;*/
+    background:#6f5b52 ;
     position: fixed;
     left: 0;
     top: 0;
+    padding: 10px 16px ;
   }
 
   .side p{
     margin: 0;
     line-height: 46px;
-    font-size: 20px;
-    color: #17b6ad;
+    font-size: 30px;
+    color: white;
 
   }
   .side h4{

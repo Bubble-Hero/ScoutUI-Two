@@ -22,7 +22,7 @@
   display: flex;
   width: 100%;
   /*height: 100%;*/
-  background: url("../../static/img/myBodyBox.jpg");
+  background: url("../../static/img/bbg.png");
   background-size: 100% 100%;
   position: relative;
   padding-left: 230px;

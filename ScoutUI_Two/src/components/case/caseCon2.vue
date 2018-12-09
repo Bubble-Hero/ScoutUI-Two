@@ -2,9 +2,46 @@
     <div class="row">
       <ul>
         <li>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <router-link to="/caseDetail">
+            <div class="con">
+              <img src="../../assets/img/a1.png"/>
+            </div>
+            <div class="mask"></div>
+            </router-link>
+          </div>
+          <div class="col-md-4">
+            <div class="con">
+              <img src="../../assets/img/a1.png"/>
+            </div>
+            <div class="mask"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="con">
+              <img src="../../assets/img/a1.png"/>
+            </div>
+            <div class="mask"></div>
+          </div>
+        </li>
+        <li>
+          <div class="col-md-4">
+            <div class="con">
+              <img src="../../assets/img/a1.png"/>
+            </div>
+            <div class="mask"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="con">
+              <img src="../../assets/img/a1.png"/>
+            </div>
+            <div class="mask"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="con">
+              <img src="../../assets/img/a1.png"/>
+            </div>
+            <div class="mask"></div>
+          </div>
         </li>
       </ul>
     </div>
@@ -12,14 +49,52 @@
 
 <script>
     export default {
-        name: "caseCon2"
+        name: "caseCon2",
     }
 </script>
 
 <style scoped>
   .row{width: 100%}
-  .row ul li{
-    height: 300px;
-    background: #ff0;
+  .row ul{
+
   }
+  .row ul li{
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  .row ul li a{
+    width: 25%;
+  }
+  .col-md-4{
+      width: 25%;
+      height:525px;
+    background: #fff;
+    border: 1px solid #17b6ad;
+    position: relative;
+    overflow: hidden;
+
+ }
+  .col-md-4:hover .mask{
+    transform: translateY(650px);
+    transition: all 0.5s;
+  }
+  .con{display: flex;}
+  .con img{
+    width: 90%;
+    height: 100%;
+    margin: auto
+  }
+  .mask{
+     position: absolute;
+     top: -650px;
+     left: 0;
+     width: 100%;
+     height: 650px;
+     background: #000;
+     opacity: 0.5;
+   }
 </style>
