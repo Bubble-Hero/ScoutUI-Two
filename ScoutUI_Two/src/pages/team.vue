@@ -20,7 +20,7 @@
 
 <style scoped>
   main{
-    width: 50%;
+    width: 100%;
     /*background: red;*/
     /*overflow: hidden;*/
     /*margin-top: 65px;*/

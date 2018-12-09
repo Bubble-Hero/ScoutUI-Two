@@ -140,6 +140,7 @@
     }
     .f-box {
       display: flex;flex-direction: row-reverse;
+      padding-bottom:36rem;
       i{
         font-size: 1.8rem;
       }

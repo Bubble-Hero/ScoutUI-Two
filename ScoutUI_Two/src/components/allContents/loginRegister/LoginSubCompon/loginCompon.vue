@@ -3,7 +3,7 @@
     <header>
       <p>
         <router-link to="">
-          <i class="iconfont" style="color: #88dad3;">&#xe66b;</i>
+          <i class="iconfont" style="color: #88dad3;">&#xe509;</i>
         </router-link>
       </p>
       <p>帮助</p>

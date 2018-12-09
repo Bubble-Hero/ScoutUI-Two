@@ -256,6 +256,7 @@
 </template>
 
 <script>
+  import $ from "jquery"
   import Swiper from "swiper"
   export default {
     name: "NearList",
@@ -366,6 +367,7 @@
     overflow-y: hidden;
     line-height: 2rem;
     display: flex;
+    cursor: pointer;
     div{                                         //改li
       white-space: nowrap;
       margin-right: .8rem;

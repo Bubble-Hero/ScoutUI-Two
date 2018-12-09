@@ -2,7 +2,7 @@
   <div class="side">
     <div class="logo">
       <!--<img src="../../assets/img/LOGO-transparent.png" >-->
-      <p>Scout<b style="">UI</b></p>
+      <router-link tag="p" to="/index" style="cursor: pointer">Scout<b style="">UI</b></router-link>
     </div>
     <!--。。。。；移动端。。。。。。。-->
     <h4>移动端组件 </h4>
@@ -21,7 +21,7 @@
       <span class="liTitle">登录注册组件<img src="../../static/img/side01.png"></span>
 
     <ul class="slideUL">
-      <router-link tag="li" to="/compo/Login"><i class="iconfont">&#xe60f;</i>登录组件</router-link>
+      <router-link tag="li" to="/compo/Login"><i class="iconfont">&#xe60f;</i>复合组件</router-link>
     </ul>
     <!--。。。。。pc端。。。。。-->
     <h4> PC 端组件 </h4>

@@ -28,13 +28,13 @@
 
 <style lang="scss" scoped>
   .footer {
-    padding-top:30rem;
     line-height: 30px;
     text-align: center;
     color: #a1a1a1;
     font-weight: 300;
     background: transparent;
     font-size: 1.1rem;
+    margin-bottom: 5rem;
       a {
       padding: 0 5px;
         color: #b1b1b1;

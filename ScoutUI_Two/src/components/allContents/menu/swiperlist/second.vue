@@ -15,6 +15,7 @@
 </template>
 
 <script>
+  import $ from "jquery"
   import NearNav from "./NearNav";
   import NearList from "./NearList";
   export default {

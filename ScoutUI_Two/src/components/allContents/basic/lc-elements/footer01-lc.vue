@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe604;</i>首页</a>
+    <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe615;</i>首页</a>
     <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe645;</i>附近</a>
     <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe6cd;</i>发现</a>
     <a class="footernav" to='/xxx'><i class="navIcon iconfont">&#xe6cf;</i>订单</a>
@@ -51,6 +51,7 @@
     text-align: center;
     margin: 0 auto;
     color:#555;
+    cursor: pointer;
   }
   .navIcon{
     margin:0 auto;

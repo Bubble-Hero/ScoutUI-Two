@@ -9,7 +9,7 @@
         <!--<i class="iconfont icon-icon-copy"></i>-->
       </div>
       <div class="errbox"></div>
-      <button class="sub-btn"  @click="login" type="button">登录</button>
+      <button class="sub-btn"  @click="login" type="button" style="cursor: pointer">登录</button>
       <div class="login-type">
         <router-link to="/compo/Login/login1">
           <p class="ft">验证码登录</p>
@@ -147,6 +147,7 @@
   }
   .ft{
     font-size: 1.4rem;
+    cursor: pointer;
   }
   input{
     width: 100%;

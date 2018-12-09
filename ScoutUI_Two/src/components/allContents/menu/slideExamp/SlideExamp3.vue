@@ -4,15 +4,15 @@
      <footer>
           <input type="text" placeholder="评论一下"/>
           <div class="share">
-            <p class="footeriShare" @click="goTop">
+            <p class="footeriShare cur" @click="goTop">
               <i class="iconfont footeri">&#xe6d4;</i>
               <span>分享</span>
             </p>
-            <p>
+            <p class="cur">
               <i class="iconfont footeri">&#xe5e3;</i>
               <span>评论</span>
             </p>
-            <p>
+            <p class="cur">
               <i class="iconfont footeri">&#xe637;</i>
               <span>收藏</span>
             </p>
@@ -78,6 +78,9 @@
   height: 43rem;
   width: 40%;
 }
+.cur{
+  cursor: pointer;
+}
   /*...footer..*/
   footer{
     display: flex;
@@ -131,6 +134,7 @@
     left: 0;
     bottom: 0;
     display: none;
+    cursor: pointer;
   }
   .shareTo p{
     width: 100%;

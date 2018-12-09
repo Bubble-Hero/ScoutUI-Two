@@ -33,6 +33,7 @@ import chart from "../components/allContents/pc-table/Chart"
  */
 import login1 from "../components/allContents/loginRegister/LoginSubCompon/loginComponCon1"
 import login2 from "../components/allContents/loginRegister/LoginSubCompon/LoginComCon2"
+import login3 from "../components/allContents/loginRegister/LoginSubCompon/MeSectionCon3"
 import loginCom from "../components/allContents/loginRegister/LoginSubCompon/loginCompon"
 
 
@@ -90,7 +91,8 @@ export default new Router({
           children:[
             {path: '', redirect: "login1"},
             {path: 'login1', component: login1},
-            {path: 'login2', component: login2}
+            {path: 'login2', component: login2},
+            {path: 'login3', component: login3}
           ]
         },
         {path: 'Register', component: Register},
