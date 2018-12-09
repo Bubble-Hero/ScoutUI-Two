@@ -11,7 +11,7 @@
       <div class="introBox">
         <h1>表格</h1>
         <div class="introBoxContent">
-          <h2>用途：</h2>
+          <h2>用途：表格组件用于记录表状数据，使结构清晰</h2>
         </div>
       </div>
       <!--代码展示框2-->
@@ -19,14 +19,9 @@
         <h1>代码展示</h1>
         <div class="introBoxContent">
           <!--------------------------------下方是代码展示区-->
-          <textarea style="resize:none;" cols="30" rows="8" readonly>
-            <ul>
-              <li>关于 Scout UI</li>
-              <li>设计理念</li>
-              <li>兼容</li>
-              <li>相关链接</li>
-            </ul>
-          </textarea>
+          <script type="syntaxhighlighter" class="brush:html"><![CDATA[
+{{data}}
+          ]]></script>
           <!--------------------------------上方是代码展示区-->
         </div>
       </div>
@@ -34,9 +29,9 @@
       <div class="showBox introBox">
         <h1>效果展示</h1>
         <!--效果展示盒子，放完效果将内联高度删除-->
-        <div class="introBoxContent" style="height: 200px;">
+        <div class="introBoxContent" style="height: 300px;">
           <!--------------------------------下方是效果组件展示区-->
-          ^(oo)^233333
+          <form-lc></form-lc>
           <!--------------------------------上方是效果组件展示区-->
         </div>
       </div>
@@ -45,23 +40,29 @@
 </template>
 
 <script>
+  import FormLc from "./lc/form-lc";
   export default {
     name: "Form",
+    components: {FormLc},
     data(){
       return{
-        // "contentData":[
-        //   {
-        //     "header2":"顶部组件",
-        //     "introContent":"用途：用于移动端顶部，具体用于概括本页面所属分类。",
-        //     "code":"<ul>\n" +
-        //       "              <li>关于 Scout UI</li>\n" +
-        //       "              <li>设计理念</li>\n" +
-        //       "              <li>兼容</li>\n" +
-        //       "              <li>相关链接</li>\n" +
-        //       "            </ul>"
-        //   },
-
-        // ]
+        data:"" +
+          "<div class=\"panel panel-default\">\n" +
+          "        <!-- Default panel contents -->\n" +
+          "        <div class=\"panel-heading\">Panel heading</div>\n" +
+          "        <div class=\"panel-body\">\n" +
+          "          <p>...</p>\n" +
+          "        </div>\n" +
+          "\n" +
+          "        <!-- List group -->\n" +
+          "        <ul class=\"list-group\">\n" +
+          "          <li class=\"list-group-item\">Cras justo odio</li>\n" +
+          "          <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n" +
+          "          <li class=\"list-group-item\">Morbi leo risus</li>\n" +
+          "          <li class=\"list-group-item\">Porta ac consectetur ac</li>\n" +
+          "          <li class=\"list-group-item\">Vestibulum at eros</li>\n" +
+          "        </ul>\n" +
+          "      </div>"
       }
     }
   }
