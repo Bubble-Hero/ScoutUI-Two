@@ -488,7 +488,7 @@
         }
       }
       .two{
-        left: 49rem;
+        left: 50%;
         //top: -10rem;
         background: linear-gradient(90deg,#fff,#eee);
         .pic{
@@ -505,7 +505,7 @@
       //  top: -14rem;
       }
       .four{
-        left: 49rem;
+        left: 50%;
       //  top: -21rem;
         background: linear-gradient(90deg,#fff,#eee);
         .pic{
