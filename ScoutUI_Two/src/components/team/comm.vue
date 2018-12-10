@@ -1,75 +1,80 @@
 <template>
-  <div class="nora">
-    <div class="comm">
-      <div class="title">
-        <router-link to="/index">
-        <img src="../../../static/img/LOGO-transparent.png" alt="">
-        </router-link>
-        <p>Scout<span>UI</span>社区</p>
-        <ul>
-          <li>
-            <i class="iconfont">&#xe5e3;</i>
-            <span>交流</span>
-          </li>
-          <li>
-            <i class="iconfont">&#xe63d;</i>
-            <span>专区</span>
-          </li>
-        </ul>
-      </div>
-      <div class="inter">
-        <ul>
-          <li v-for="(p,index) in list">
-            <img :src="p.img" alt="">
-            <div class="left">
-              <div class="argu">
-                <span>{{p.span4}}</span>
-                <p>{{p.p}}</p>
-              </div>
-              <div class="name">
-                <span>{{p.span1}}</span>
-                <span>{{p.span2}}</span>
-                <a href="">
-                  <i class="iconfont">&#xe61a;</i>
-                  <span>{{p.span3}}</span>
-                </a>
-                <a href="" class="posi">
-                  <i class="iconfont">&#xe5e3;</i>
-                  <span>{{p.span5}}</span>
-                </a>
-              </div>
-            </div>
-
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="right">
-      <div class="arr">
-        <p class="tit" style="background: #333;color: #fff;">本周热议</p>
-        <ul>
-          <li v-for="(c,i) in lis">
-            <p>{{c.p}}</p>
-            <a href="">
+  <div style="height: 100%">
+    <div class="nora">
+      <div class="comm">
+        <div class="title">
+          <router-link to="/index">
+            <img src="../../../static/img/LOGO-transparent.png" alt="">
+          </router-link>
+          <p>Scout<span>UI</span>社区</p>
+          <ul>
+            <li>
               <i class="iconfont">&#xe5e3;</i>
-              <span>{{c.span}}</span>
-            </a>
-          </li>
+              <span>交流</span>
+            </li>
+            <li>
+              <i class="iconfont">&#xe63d;</i>
+              <span>专区</span>
+            </li>
+          </ul>
+        </div>
+        <div class="inter">
+          <ul>
+            <li v-for="(p,index) in list">
+              <img :src="p.img" alt="">
+              <div class="left">
+                <div class="argu">
+                  <span>{{p.span4}}</span>
+                  <p>{{p.p}}</p>
+                </div>
+                <div class="name">
+                  <span>{{p.span1}}</span>
+                  <span>{{p.span2}}</span>
+                  <a href="">
+                    <i class="iconfont">&#xe61a;</i>
+                    <span>{{p.span3}}</span>
+                  </a>
+                  <a href="" class="posi">
+                    <i class="iconfont">&#xe5e3;</i>
+                    <span>{{p.span5}}</span>
+                  </a>
+                </div>
+              </div>
 
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="atten">
-        <img src="../../../static/img/ewm.jpg" alt="">
-        <p>扫码关注ScoutUI公众号</p>
+      <div class="right">
+        <div class="arr">
+          <p class="tit" style="background: #333;color: #fff;">本周热议</p>
+          <ul>
+            <li v-for="(c,i) in lis">
+              <p>{{c.p}}</p>
+              <a href="">
+                <i class="iconfont">&#xe5e3;</i>
+                <span>{{c.span}}</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="atten">
+          <img src="../../../static/img/ewm.jpg" alt="">
+          <p>扫码关注ScoutUI公众号</p>
+        </div>
       </div>
     </div>
+    <copyright></copyright>
   </div>
 </template>
 
 <script>
+    import Copyright from "../footer-copyright/copyright";
     export default {
         name: "comm",
-        data(){
+      components: {Copyright},
+      data(){
            return{
             list:[
               {
@@ -147,11 +152,13 @@
 
 <style lang="scss" scoped>
   .nora{
+    margin-top: 30rem;
     display: flex;
+    margin-right: 9rem;
     .comm{
       margin-left: 9rem;
       /*background: red;*/
-      width: 55rem;
+      width: 100%;
       //margin-bottom: 20rem;
       //overflow: hidden;
       .title{
@@ -258,10 +265,10 @@
           border-top: 0;
           li{
             display: flex;
-
+            padding-right: .5rem;
             p{
               border-bottom: 0;
-              width: 81%;
+              width: 78%;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -270,7 +277,6 @@
             a{
               //padding-top: 1.3rem;
               margin-left: 3rem;
-
             }
           }
         }

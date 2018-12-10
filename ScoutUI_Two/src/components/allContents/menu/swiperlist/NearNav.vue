@@ -57,6 +57,7 @@
     color:#111;
     position: relative;
     display: flex;flex-direction: column;
+    cursor: pointer;
     span{
       height:.2rem;
       width: 2rem;

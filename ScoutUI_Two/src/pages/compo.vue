@@ -4,17 +4,25 @@
             <compo-side></compo-side>
         </div>
         <div class="compoBoxContent">
-            <router-view></router-view>
+            <router-view ></router-view>
         </div>
     </div>
 </template>
-
 <script>
+    import ss from '../../static/js/shCore'
     import CompoSide from "../components/CompoSide";
     export default {
         name: "compo",
-      components: {CompoSide}
+      components: {CompoSide},
+      updated(){
+
+      },
+      mounted(){
+
+      }
     }
+
+
 </script>
 
 <style scoped>

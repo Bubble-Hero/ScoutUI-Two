@@ -336,7 +336,7 @@
         width: 7rem;
         height: 7rem;
         position: absolute;
-        left: 36rem;
+        left: 30%;
         top: -2rem;
         img{
           width: 7rem;
@@ -489,7 +489,7 @@
       }
       .two{
         left: 49rem;
-        top: -10rem;
+        //top: -10rem;
         background: linear-gradient(90deg,#fff,#eee);
         .pic{
           position: absolute;
@@ -502,11 +502,11 @@
       }
       .three{
         padding-left: 2rem;
-        top: -14rem;
+      //  top: -14rem;
       }
       .four{
         left: 49rem;
-        top: -21rem;
+      //  top: -21rem;
         background: linear-gradient(90deg,#fff,#eee);
         .pic{
           position: absolute;
@@ -519,7 +519,7 @@
       }
       .last{
         padding-left: 2rem;
-        top: -28rem;
+       // top: -28rem;
       }
     }
     span{

@@ -18,7 +18,7 @@
         <h1>代码展示</h1>
         <div class="introBoxContent" style="height: 300px;overflow: auto;">
           <!--------------------------------下方是代码展示区-->
-          <script type="syntaxhighlighter" class="brush:html"><![CDATA[
+          <script type="syntaxhighlighter" class="brush:html" ><![CDATA[
 {{data1}}
           ]]></script>
           <script type="syntaxhighlighter" class="brush:css"><![CDATA[
@@ -136,6 +136,9 @@
           "    font-size: 1.6rem;\n" +
           "  }"
       }
+    },
+    mounted(){
+     // SyntaxHighlighter.all()
     }
   }
 </script>

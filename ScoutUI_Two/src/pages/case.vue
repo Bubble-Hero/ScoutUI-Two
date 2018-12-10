@@ -1,7 +1,13 @@
 <template>
     <div class="row">
       <!-----头部------->
-      <header></header>
+
+      <header>
+      </header>
+      <div class="logo">
+        <!--<img src="../../assets/img/LOGO-transparent.png" >-->
+        <router-link tag="p" to="/index" style="cursor: pointer">Scout<b style="">UI</b></router-link>
+      </div>
       <!------banner----->
       <div class="banner"></div>
       <section>
@@ -32,6 +38,16 @@
 </script>
 
 <style scoped>
+  .logo{
+    width: 10rem;
+    height: 7rem;
+    position: absolute;
+    left: 3%;
+    top: 22%;
+    z-index: 136;
+    font-size: 4.8rem;
+    color: #fff;
+  }
   .row{
     background:#fff;
   }

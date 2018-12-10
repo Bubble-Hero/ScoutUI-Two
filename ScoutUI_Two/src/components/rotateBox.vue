@@ -1,12 +1,16 @@
 <template>
   <div class="rotage-box">
     <div class="wrap">
-      <div class="box1 box">HTML5</div>
-      <div class="box2 box">SMUI</div>
+      <div class="box1 box">nodeJs</div>
+      <div class="box2 box">ScoutUI</div>
       <div class="box3 box">VUE</div>
       <div class="box4 box">Webpack</div>
       <div class="box5 box">Node</div>
-      <div class="box6 box"><img src="../../static/img/LOGO-transparent.png" width="80" height="80"></div>
+      <div class="box6 box">
+        <router-link to="/index">
+        <img src="../../static/img/LOGO-transparent.png" width="80" height="80">
+      </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -87,7 +91,6 @@
   .rotage-box .box6 {
     -webkit-transform: translatez(40px);
     -moz-transform: translatez(40px);
-    background: rgba(0,255,255,.5);
     background: rgba(153,204,255,.1);
 
   }
