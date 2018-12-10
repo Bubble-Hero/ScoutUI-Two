@@ -1,13 +1,13 @@
 <template>
   <div class="all">
     <div class="swiper-container" dir="rtl">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper buf">
         <div class="swiper-slide index-one">
           <h1>
             ScoutUI
           </h1>
           <h2>scoutUI一套基于vue2.0的组件库</h2>
-          <a class="down" href="//localhost/sourceCode.rar" download="">
+          <a class="down" href="../../static/sourceCode.rar" download="">
             <i class="iconfont">&#xe625;</i>
             <span>
                    立即下载
@@ -15,7 +15,7 @@
           </a>
           <div class="site-version">
             <span>当前版本：<cite class="site-showv">2.1.1</cite></span>
-            <span><a href="/" target="_blank" class="log">更新日志</a></span>
+            <span><a class="log" @click="goLog">更新日志</a></span>
             <span>下载量：<em class="site-showdowns">300</em></span>
           </div>
           <div class="f-box">
@@ -31,7 +31,9 @@
           <case-detail></case-detail>
           <rotate-box></rotate-box>
         </div>
-        <div class="swiper-slide index-three"><p>Slide 3</p></div>
+        <div class="swiper-slide index-three">
+
+        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -61,6 +63,19 @@
               }
             });
           },
+        goLog(){
+            let sw=document.body.offsetHeight
+          //  alert(document.body.offsetHeight)
+          $(".buf").css({//"translate3d(-375px,0px,0px)",
+            transform:function(){
+              let transY=sw*-2
+              return "translate3d(0px,"+transY+"px,0px)"    //拼接字符串
+            },
+            transitionDuration:"1000ms"
+          })
+          $($(".swiper-pagination-bullet")[2]).addClass("swiper-pagination-bullet-active")
+          $($(".swiper-pagination-bullet")[2]).siblings().removeClass("swiper-pagination-bullet-active")
+        }
         // down(){
         //   var url = "http://bgs09143010.gotoip1.com/bb.rar";
         //   window.open(url);
@@ -173,6 +188,7 @@
       .log{
         color:#fff;
         text-decoration: underline;
+        cursor: pointer;
       }
     }
     .site-version span {

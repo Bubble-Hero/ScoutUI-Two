@@ -9,18 +9,28 @@
     </div>
 </template>
 <script>
-    import ss from '../assets/js/shCore'
+    import $ from 'jquery'
+    import '../../static/js/shCore'
     import CompoSide from "../components/CompoSide";
     export default {
         name: "compo",
       components: {CompoSide},
       methods:{
             getJs(){
-
+              var script=document.createElement('script')
+              $("head").append(script)
+              $($("script")[0]).attr("src","../../static/js/shCore")
         }
       },
       mounted(){
-      //  this.getJs()
+          this.getJs()
+      },
+      scrollBehavior (to, from, savedPosition) {
+        if (savedPosition) {
+          return savedPosition
+        } else {
+          return { x: 0, y: 0 }
+        }
       }
     }
 

@@ -68,7 +68,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['actionscript3', 'as3'];
+  Brush.aliases	= ['actionscript3', 'as3','css'];
 
   SyntaxHighlighter.brushes.AS3 = Brush;
 
@@ -144,7 +144,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype = new SyntaxHighlighter.Highlighter();
-  Brush.aliases = ['applescript'];
+  Brush.aliases = ['applescript','css'];
 
   SyntaxHighlighter.brushes.AppleScript = Brush;
 
@@ -204,7 +204,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   }
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['bash', 'shell'];
+  Brush.aliases	= ['bash', 'shell','css'];
 
   SyntaxHighlighter.brushes.Bash = Brush;
 
@@ -305,7 +305,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   }
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['coldfusion','cf'];
+  Brush.aliases	= ['coldfusion','cf','css'];
 
   SyntaxHighlighter.brushes.ColdFusion = Brush;
 
@@ -403,7 +403,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['cpp', 'c'];
+  Brush.aliases	= ['cpp', 'c','css'];
 
   SyntaxHighlighter.brushes.Cpp = Brush;
 
@@ -468,7 +468,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['c#', 'c-sharp', 'csharp'];
+  Brush.aliases	= ['c#', 'c-sharp', 'csharp','css'];
 
   SyntaxHighlighter.brushes.CSharp = Brush;
 
@@ -616,7 +616,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['delphi', 'pascal', 'pas'];
+  Brush.aliases	= ['delphi', 'pascal', 'pas','css'];
 
   SyntaxHighlighter.brushes.Delphi = Brush;
 
@@ -658,7 +658,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['diff', 'patch'];
+  Brush.aliases	= ['diff', 'patch','css'];
 
   SyntaxHighlighter.brushes.Diff = Brush;
 
@@ -711,7 +711,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['erl', 'erlang'];
+  Brush.aliases	= ['erl', 'erlang','css'];
 
   SyntaxHighlighter.brushes.Erland = Brush;
 
@@ -779,7 +779,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   }
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['groovy'];
+  Brush.aliases	= ['groovy','css'];
 
   SyntaxHighlighter.brushes.Groovy = Brush;
 
@@ -837,7 +837,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['java'];
+  Brush.aliases	= ['java','css'];
 
   SyntaxHighlighter.brushes.Java = Brush;
 
@@ -896,7 +896,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['jfx', 'javafx'];
+  Brush.aliases	= ['jfx', 'javafx','css'];
 
   SyntaxHighlighter.brushes.JavaFX = Brush;
 
@@ -949,7 +949,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['js', 'jscript', 'javascript'];
+  Brush.aliases	= ['js', 'jscript', 'javascript','css'];
 
   SyntaxHighlighter.brushes.JScript = Brush;
 
@@ -1022,7 +1022,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   }
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases		= ['perl', 'Perl', 'pl'];
+  Brush.aliases		= ['perl', 'Perl', 'pl','css'];
 
   SyntaxHighlighter.brushes.Perl = Brush;
 
@@ -1111,7 +1111,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['php'];
+  Brush.aliases	= ['php','css'];
 
   SyntaxHighlighter.brushes.Php = Brush;
 
@@ -1145,7 +1145,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['text', 'plain'];
+  Brush.aliases	= ['text', 'plain','css'];
 
   SyntaxHighlighter.brushes.Plain = Brush;
 
@@ -1220,7 +1220,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['powershell', 'ps'];
+  Brush.aliases	= ['powershell', 'ps','css'];
 
   SyntaxHighlighter.brushes.PowerShell = Brush;
 
@@ -1285,7 +1285,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['py', 'python'];
+  Brush.aliases	= ['py', 'python','css'];
 
   SyntaxHighlighter.brushes.Python = Brush;
 
@@ -1341,7 +1341,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['ruby', 'rails', 'ror', 'rb'];
+  Brush.aliases	= ['ruby', 'rails', 'ror', 'rb','css'];
 
   SyntaxHighlighter.brushes.Ruby = Brush;
 
@@ -1436,7 +1436,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['sass', 'scss'];
+  Brush.aliases	= ['sass', 'scss','css'];
 
   SyntaxHighlighter.brushes.Sass = Brush;
 
@@ -1488,7 +1488,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   }
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['scala'];
+  Brush.aliases	= ['scala','css'];
 
   SyntaxHighlighter.brushes.Scala = Brush;
 
@@ -1554,7 +1554,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['sql'];
+  Brush.aliases	= ['sql','css'];
 
   SyntaxHighlighter.brushes.Sql = Brush;
 
@@ -1611,7 +1611,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['vb', 'vbnet'];
+  Brush.aliases	= ['vb', 'vbnet','css'];
 
   SyntaxHighlighter.brushes.Vb = Brush;
 
@@ -1681,7 +1681,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   };
 
   Brush.prototype	= new SyntaxHighlighter.Highlighter();
-  Brush.aliases	= ['xml', 'xhtml', 'xslt', 'html'];
+  Brush.aliases	= ['xml', 'xhtml', 'xslt', 'html','css'];
 
   SyntaxHighlighter.brushes.Xml = Brush;
 
