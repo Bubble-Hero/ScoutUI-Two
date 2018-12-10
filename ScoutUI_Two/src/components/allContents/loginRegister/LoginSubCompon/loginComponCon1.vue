@@ -18,6 +18,7 @@
         name: "loginComponCon1",
       mounted(){
         //  alert("因本团队无多余经费连接短信接口，所以请您点击手动注册")
+
       }
     }
 </script>
