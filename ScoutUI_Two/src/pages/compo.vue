@@ -9,16 +9,18 @@
     </div>
 </template>
 <script>
-    import ss from '../../static/js/shCore'
+    import ss from '../assets/js/shCore'
     import CompoSide from "../components/CompoSide";
     export default {
         name: "compo",
       components: {CompoSide},
-      updated(){
+      methods:{
+            getJs(){
 
+        }
       },
       mounted(){
-
+      //  this.getJs()
       }
     }
 

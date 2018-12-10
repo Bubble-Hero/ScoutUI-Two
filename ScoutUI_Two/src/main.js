@@ -4,13 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
  import "jquery"
-
-import "jquery"
+import VueResource from 'vue-resource'
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap"
 import "./assets/css/base.css"
 
-
+Vue.use(VueResource);
 import Swiper from 'swiper'
 
 Vue.config.productionTip = false
