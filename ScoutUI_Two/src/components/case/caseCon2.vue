@@ -7,46 +7,106 @@
             <div class="con">
               <img src="../../assets/img/a1.png"/>
             </div>
-            <div class="mask"></div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>美团App</h2>
+                <p>外卖网|外卖订餐|快餐外卖</p>
+              </div>
+            </div>
             </router-link>
           </div>
           <div class="col-md-4">
+            <router-link to="/caseDetail">
             <div class="con">
               <img src="../../../static/img/a2.png"/>
             </div>
-            <div class="mask"></div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>堆糖App</h2>
+                <p>美好生活研究所</p>
+              </div>
+            </div>
+            </router-link>
           </div>
           <div class="col-md-4">
+            <router-link to="/caseDetail">
             <div class="con">
               <img src="../../../static/img/a3.png"/>
             </div>
-            <div class="mask"></div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>荔枝App</h2>
+                <p>用声音在一起,直播听音乐相声评书</p>
+              </div>
+            </div>
+            </router-link>
           </div>
           <div class="col-md-4">
+            <router-link to="/caseDetail">
             <div class="con">
               <img src="../../../static/img/a4.png"/>
             </div>
-            <div class="mask"></div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>考研帮App</h2>
+                <p>让考研简单不孤单</p>
+              </div>
+            </div>
+            </router-link>
           </div>
         </li>
         <li>
           <div class="col-md-4">
+            <router-link to="/caseDetail">
             <div class="con">
-              <img src="../../assets/img/a1.png"/>
+              <img src="../../../static/img/a5.jpg"/>
             </div>
-            <div class="mask"></div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>每日优鲜App</h2>
+                <p>让每个人随时随地享受食物的美好</p>
+              </div>
+            </div>
+            </router-link>
           </div>
           <div class="col-md-4">
+            <router-link to="/caseDetail">
             <div class="con">
-              <img src="../../assets/img/a1.png"/>
+              <img src="../../../static/img/a6.jpg"/>
             </div>
-            <div class="mask"></div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>链家App</h2>
+                <p>连接每个家的故事</p>
+              </div>
+            </div>
+            </router-link>
           </div>
           <div class="col-md-4">
+            <router-link to="/caseDetail">
             <div class="con">
-              <img src="../../assets/img/a1.png"/>
+              <img src="../../../static/img/a7.jpg"/>
             </div>
-            <div class="mask"></div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>金山词霸App</h2>
+                <p>在线词典_在线翻译</p>
+              </div>
+            </div>
+            </router-link>
+          </div>
+          <div class="col-md-4">
+            <router-link to="/caseDetail">
+            <div class="con">
+              <img src="../../../static/img/a8.png"/>
+            </div>
+            <div class="mask">
+              <div class="maskcon">
+                <h2>京东App</h2>
+                <p>多快好省,只为品质生活</p>
+              </div>
+            </div>
+            </router-link>
           </div>
         </li>
       </ul>
@@ -83,7 +143,7 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-   box-shadow: 2px 2px 1px #FFC3FD;
+   box-shadow: -4px 4px 5px 2px #e9e8f082;
 
  }
   .col-md-4:hover .mask{
@@ -103,7 +163,20 @@
      width: 100%;
      height: 650px;
      background: #000;
-     opacity: 0.5;
+     opacity: 0.7;
+    display: flex;
    }
+  .maskcon{
+    margin:90% auto;
+  }
+  .mask h2{
+    text-align: center;
+    line-height:0.5;
+    color: #fff;
 
+  }
+  .mask p{
+    color: #fff;
+    line-height:4;
+  }
 </style>

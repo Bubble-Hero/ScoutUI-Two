@@ -7,6 +7,9 @@ import caseCon1 from '@/components/case/caseCon1'
 import caseCon2 from '@/components/case/caseCon2'
 import caseDetail from '@/pages/caseDetail'
 import caseAnswer from '@/pages/caseAnswer'
+import caseAnswerCon1 from '@/components/caseAnswer/caseAnswerCon1'
+import caseAnswerCon2 from '@/components/caseAnswer/caseAnswerCon2'
+import caseAnswerCon3 from '@/components/caseAnswer/caseAnswerCon3'
 
 /**
  * 组件页面路由（及其子路由）配置
@@ -124,7 +127,13 @@ export default new Router({
     {
       path: '/caseAnswer',
       name:"caseAnswer",
-      component: caseAnswer
+      component: caseAnswer,
+      children:[
+        {path:'',redirect:"caseAnswerCon1"},
+        {path: 'caseAnswerCon1', name: 'caseAnswerCon1', component: caseAnswerCon1},
+        {path: 'caseAnswerCon2', name: 'caseAnswerCon2', component: caseAnswerCon2},
+        {path: 'caseAnswerCon3', name: 'caseAnswerCon3', component: caseAnswerCon3},
+      ]
     }
   ]
 })
