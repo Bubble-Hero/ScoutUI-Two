@@ -10,7 +10,7 @@ import "bootstrap/dist/js/bootstrap"
 
 import "./assets/css/base.css"
 
-Vue.use(VueResource);
+Vue.use(VueResource)
 import Swiper from 'swiper'
 
 Vue.config.productionTip = false
