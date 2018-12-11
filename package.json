@@ -1,9 +1,9 @@
 {
-  "name": "hero",
-  "version": "1.0.0",
+  "name": "scoutui",
+  "version": "2.1.5",
   "description": "cool",
   "author": "Baiguoshuai <1057459067@qq.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -70,5 +70,15 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": ".postcssrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bubble-Hero/ScoutUI-Two.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bubble-Hero/ScoutUI-Two/issues"
+  },
+  "homepage": "https://github.com/Bubble-Hero/ScoutUI-Two#readme"
 }

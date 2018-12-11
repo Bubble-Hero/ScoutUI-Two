@@ -14,7 +14,7 @@
                 </span>
           </a>
           <div class="site-version">
-            <span>当前版本：<cite class="site-showv">2.1.4</cite></span>
+            <span>当前版本：<cite class="site-showv">2.1.5</cite></span>
             <span><a class="log" @click="goLog">更新日志</a></span>
             <span>下载量：<em class="site-showdowns">300</em></span>
           </div>
@@ -165,7 +165,7 @@
     }
     .f-box {
       display: flex;flex-direction: row-reverse;
-      padding-bottom:28rem;
+      padding-bottom:34rem;
       i{
         font-size: 1.8rem;
       }
