@@ -43,7 +43,8 @@ import loginCom from "../components/allContents/loginRegister/LoginSubCompon/log
 import index from '@/pages/index'
 import team from '@/pages/team'
 
-
+import  logwebapp from '../components/log/logwebapp'
+import  logpc from '../components/log/logpc'
 Vue.use(Router)
 
 export default new Router({
@@ -117,7 +118,12 @@ export default new Router({
     {
       path: '/index',
       name:"index",
-      component: index
+      component: index,
+      children:[
+        {path:'',redirect:"logwebapp"},
+        {path: 'logwebapp', name: 'logwebapp', component: logwebapp},
+        {path: 'logpc', name: 'logpc', component: logpc},
+      ]
     },
     {
       path: '/team',

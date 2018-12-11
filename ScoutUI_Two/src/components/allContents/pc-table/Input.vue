@@ -122,7 +122,7 @@
           "      Nerr(){\n" +
           "        $(\".status\").html(\"\")\n" +
           "      },\n" +
-          "      loginCheck(){\n" +
+          "      loginCheck(){      //后端接口\n" +
           "        this.$http.post(\"http://bgs09143010.gotoip1.com/MeiYuan-webapp-php/loginCheck.php\", {\n" +
           "          \"username\":this.name,\n" +
           "          \"userpass\":this.psd\n" +
@@ -163,7 +163,7 @@
           "        }\n" +
           "      },\n" +
           "      updateMessage(){\n" +
-          "        if(this.status==true){\n" +
+          "        if(this.status==true){     //后端接口\n" +
           "          this.$http.post(\"http://bgs09143010.gotoip1.com/Backstage-php/updateUserpsd.php\", {\n" +
           "            \"username\":this.name,\n" +
           "            \"userpass\":this.newPsd\n" +

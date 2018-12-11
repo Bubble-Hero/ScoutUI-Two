@@ -5,8 +5,8 @@
         <div class="screen_phone" style="right: -18%;">
           <div class="videoBox">
             <img src="../../static/img/IphoneXR.png" class="ios" @click="videoPause">
-            <VIDEO class="MP4" controls="controls">
-              <source src="../../static/mp4/MeiTuan.mp4" type="video/mp4">
+            <VIDEO src="../../static/mp4/MeiTuan.mp4" class="MP4" controls="controls">
+              <!--<source src="../../static/mp4/MeiTuan.mp4" type="video/mp4">-->
             </VIDEO>
           </div>
           <a href="http://bgs09143010.gotoip1.com" class="goAPP" target="_blank">前往WebAPP</a>

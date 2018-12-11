@@ -10,7 +10,6 @@
 </template>
 <script>
     import $ from 'jquery'
-    import '../../static/js/shCore'
     import CompoSide from "../components/CompoSide";
     export default {
         name: "compo",
@@ -23,7 +22,7 @@
         }
       },
       mounted(){
-          this.getJs()
+        //  this.getJs()
       },
       scrollBehavior (to, from, savedPosition) {
         if (savedPosition) {

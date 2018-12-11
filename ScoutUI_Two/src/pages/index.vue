@@ -1,6 +1,6 @@
 <template>
   <div class="all">
-    <div class="swiper-container" dir="rtl">
+    <div class="swiper-container">
       <div class="swiper-wrapper buf">
         <div class="swiper-slide index-one">
           <h1>
@@ -14,7 +14,7 @@
                 </span>
           </a>
           <div class="site-version">
-            <span>当前版本：<cite class="site-showv">2.1.1</cite></span>
+            <span>当前版本：<cite class="site-showv">2.1.4</cite></span>
             <span><a class="log" @click="goLog">更新日志</a></span>
             <span>下载量：<em class="site-showdowns">300</em></span>
           </div>
@@ -32,8 +32,17 @@
           <rotate-box></rotate-box>
         </div>
         <div class="swiper-slide index-three">
-
+          <div class="butt">
+            <router-link to="/index/logwebapp">
+              <input type="button" value="移动端">
+            </router-link>
+            <router-link to="/index/logpc">
+              <input type="button" value="pc端">
+            </router-link>
+          </div>
+          <router-view></router-view>
         </div>
+
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -46,10 +55,11 @@
   import Copyright from "../components/footer-copyright/copyright";
   import RotateBox from "../components/rotateBox";
   import CaseDetail from "./caseDetail";
+  import Logpc from "../components/log/logpc";
 
     export default {
         name: "index",
-      components: {CaseDetail, RotateBox, Copyright},
+      components: {Logpc, CaseDetail, RotateBox, Copyright},
       methods:{
           swipers(){
             var swiper = new Swiper('.swiper-container',{
@@ -213,4 +223,15 @@
   .swiper-pagination-bullet {
     width: .8rem;height:.8rem;
   }
+  .butt{
+    text-align: left;
+    margin-top: 4rem;
+    input{
+      width: 10rem;
+      line-height: 2rem;
+      background: none;
+      border: 1px solid rgba(255,255,255,.4);
+    }
+  }
+
 </style>
